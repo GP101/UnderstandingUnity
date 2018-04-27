@@ -44,6 +44,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Reference Files\Program Attribute.cs" />
+    <None Include="Reference Files\Program GameLoop with Coroutine.cs" />
+    <None Include="Reference Files\Program GameLoop.cs" />
+    <None Include="Reference Files\Program yield01 IEnumerator.cs" />
+    <None Include="Reference Files\Program yield02 Container.cs" />
+    <None Include="Reference Files\Program yield03 Unity Coroutine.cs" />
     <None Include="Reference Files\Program GameObject03 GameObject class hierarchy.cs" />
     <None Include="Reference Files\Program GameObject01 inherits interfaces.cs" />
     <None Include="Reference Files\Program GameObject02 GetComponent.cs" />
