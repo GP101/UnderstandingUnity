@@ -1,0 +1,6 @@
+/////////////////////////////////////////////////////////////////
+Project Name:   AStar
+Date:           October 3, 2001
+Programmer: 	John Seo(seojt@kogsoft.com)
+
+[EOD]
