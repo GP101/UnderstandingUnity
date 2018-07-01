@@ -154,8 +154,8 @@ void KPolygon::Projection(KMatrix4& mat)
     {
         z = m_vertexBuffer[i].z;
         m_vertexBuffer[i] = mat * m_vertexBuffer[i];
-        m_vertexBuffer[i].x /= (z+d);
-        m_vertexBuffer[i].y /= (z+d);
+        //m_vertexBuffer[i].x /= (z+d); // homogeneous divide
+        //m_vertexBuffer[i].y /= (z+d);
     }//for
 }//KPolygon::Projection()
 //}} seojt: step3

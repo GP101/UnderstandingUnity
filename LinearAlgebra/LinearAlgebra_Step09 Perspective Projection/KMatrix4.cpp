@@ -51,6 +51,13 @@ KVector3 KMatrix4::operator*(KVector3& vLeft)
                vLeft.y * m_afElements[2][1] +
                vLeft.z * m_afElements[2][2] +
                m_afElements[2][3];
+    const float w = vLeft.x * m_afElements[3][0] +
+        vLeft.y * m_afElements[3][1] +
+        vLeft.z * m_afElements[3][2] +
+        m_afElements[3][3];
+    vRet.x /= w; // homogeneous divide
+    vRet.y /= w;
+    vRet.z /= w;
     return vRet;
 }//KMatrix4::operator*()
 
