@@ -1,9 +1,7 @@
 #pragma once
 #include "KVector3.h"
 
-//{{ seojt: step3
 class KMatrix4
-//}} seojt: step3
 {
 public:
     float   m_afElements[4][4];

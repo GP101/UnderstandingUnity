@@ -56,7 +56,6 @@ KPolygon::~KPolygon()
 
 void KPolygon::SetIndexBuffer()
 {
-    //{{ seojt: step3
     int buffer[] = {
         0,2,1,
         2,0,3,
@@ -77,12 +76,10 @@ void KPolygon::SetIndexBuffer()
         m_indexBuffer[i] = buffer[i];
     }//for
     m_sizeIndex = _countof(buffer);
-    //}} seojt: step3
 }//KPolygon::SetIndexBuffer()
 
 void KPolygon::SetVertexBuffer()
 {
-    //{{ seojt: step3
     m_vertexBuffer[0] = KVector3( -5.f,  5.f, -5.f);
     m_vertexBuffer[1] = KVector3( -5.f, -5.f, -5.f);
     m_vertexBuffer[2] = KVector3(  5.f, -5.f, -5.f);
@@ -91,50 +88,43 @@ void KPolygon::SetVertexBuffer()
     m_vertexBuffer[5] = KVector3( -5.f, -5.f,  5.f);
     m_vertexBuffer[6] = KVector3(  5.f, -5.f,  5.f);
     m_vertexBuffer[7] = KVector3(  5.f,  5.f,  5.f);
-    //}} seojt: step3
     m_sizeVertex = 8;
 }//KPolygon::SetVertexBuffer()
 
 void KPolygon::Render(HDC hdc)
 {
-    //{{ seojt: step3
     ::DrawIndexedPrimitive(
         hdc,
         m_indexBuffer,      // index buffer
         12,                 // primitive(triangle) counter
         m_vertexBuffer,     // vertex buffer
         m_color );
-    //}} seojt: step3
 }//KPolygon::Render()
 
-//{{ seojt: step2
-void KPolygon::RotateX(float theta)
-{
-    for (int i=0; i<m_sizeVertex; ++i)
-    {
-        m_vertexBuffer[i].RotateX(theta);
-    }//for
-}//KPolygon::RotateX(float theta)
+//void KPolygon::RotateX(float theta)
+//{
+//    for (int i=0; i<m_sizeVertex; ++i)
+//    {
+//        m_vertexBuffer[i].RotateX(theta);
+//    }//for
+//}//KPolygon::RotateX(float theta)
+//
+//void KPolygon::RotateY(float theta)
+//{
+//    for (int i=0; i<m_sizeVertex; ++i)
+//    {
+//        m_vertexBuffer[i].RotateY(theta);
+//    }//for
+//}//KPolygon::RotateY(float theta)
+//
+//void KPolygon::Translate(float tx, float ty, float tz)
+//{
+//    for (int i=0; i<m_sizeVertex; ++i)
+//    {
+//        m_vertexBuffer[i].Translate(tx,ty,tz);
+//    }//for
+//}//KPolygon::Translate(float tx, float ty, float tz)
 
-void KPolygon::RotateY(float theta)
-{
-    for (int i=0; i<m_sizeVertex; ++i)
-    {
-        m_vertexBuffer[i].RotateY(theta);
-    }//for
-}//KPolygon::RotateY(float theta)
-
-void KPolygon::Translate(float tx, float ty, float tz)
-{
-    for (int i=0; i<m_sizeVertex; ++i)
-    {
-        m_vertexBuffer[i].Translate(tx,ty,tz);
-    }//for
-}//KPolygon::Translate(float tx, float ty, float tz)
-//}} seojt: step2
-
-
-//{{ seojt: step3
 void KPolygon::Transform(KMatrix4& mat)
 {
     for (int i=0; i<m_sizeVertex; ++i)
@@ -142,20 +132,3 @@ void KPolygon::Transform(KMatrix4& mat)
         m_vertexBuffer[i] = mat * m_vertexBuffer[i];
     }//for
 }//KPolygon::Transform()
-//}} seojt: step3
-
-//{{ seojt: step3
-void KPolygon::Projection(KMatrix4& mat)
-{
-    float d = mat(0,0);
-    float z;
-
-    for (int i=0; i<m_sizeVertex; ++i)
-    {
-        z = m_vertexBuffer[i].z;
-        m_vertexBuffer[i] = mat * m_vertexBuffer[i];
-        //m_vertexBuffer[i].x /= (z+d); // homogeneous divide
-        //m_vertexBuffer[i].y /= (z+d);
-    }//for
-}//KPolygon::Projection()
-//}} seojt: step3

@@ -55,12 +55,10 @@ void KPolygon::SetIndexBuffer()
 
 void KPolygon::SetVertexBuffer()
 {
-    //{{ seojt: step2
     m_vertexBuffer[0] = KVector3( -5.0f,  5.0f, 0.0f);
     m_vertexBuffer[1] = KVector3( -5.0f, -5.0f, 0.0f);
     m_vertexBuffer[2] = KVector3(  5.0f, -5.0f, 0.0f);
     m_vertexBuffer[3] = KVector3(  5.0f,  5.0f, 0.0f);
-    //}} seojt: step2
     m_sizeVertex = 4;
 }//KPolygon::SetVertexBuffer()
 
@@ -74,7 +72,6 @@ void KPolygon::Render(HDC hdc)
         m_color );
 }//KPolygon::Render()
 
-//{{ seojt: step2
 void KPolygon::RotateX(float theta)
 {
     for (int i=0; i<m_sizeVertex; ++i)
@@ -98,4 +95,3 @@ void KPolygon::Translate(float tx, float ty, float tz)
         m_vertexBuffer[i].Translate(tx,ty,tz);
     }//for
 }//KPolygon::Translate(float tx, float ty, float tz)
-//}} seojt: step2
