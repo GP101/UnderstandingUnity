@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step11 Canvas
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step12 Perspective Projection with Shading", "LinearAlgebra_Step12 Perspective Projection with Shading\LinearAlgebra Step12 Perspective Projection with Shading.vcxproj", "{271410E4-AE97-47C0-A094-A4B8E22F082B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step13 Perspective Projection with Texture", "LinearAlgebra_Step13 Perspective Projection with Texture\LinearAlgebra Step13 Perspective Projection with Texture.vcxproj", "{3148E1DD-3012-4D62-972B-8B9579760B1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -195,6 +197,18 @@ Global
 		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|x64.Build.0 = Release|x64
 		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|x86.ActiveCfg = Release|Win32
 		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|x86.Build.0 = Release|Win32
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Debug|Win32.Build.0 = Debug|Win32
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Debug|x64.ActiveCfg = Debug|x64
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Debug|x64.Build.0 = Debug|x64
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Debug|x86.ActiveCfg = Debug|Win32
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Debug|x86.Build.0 = Debug|Win32
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Release|Win32.ActiveCfg = Release|Win32
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Release|Win32.Build.0 = Release|Win32
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Release|x64.ActiveCfg = Release|x64
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Release|x64.Build.0 = Release|x64
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Release|x86.ActiveCfg = Release|Win32
+		{3148E1DD-3012-4D62-972B-8B9579760B1A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
