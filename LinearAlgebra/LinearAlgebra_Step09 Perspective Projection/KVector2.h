@@ -1,4 +1,5 @@
 #pragma once
+#include <math.h>
 
 class KVector2
 {
@@ -8,6 +9,8 @@ public:
     static KVector2 right;
     static KVector2 up;
 
+    static KVector2 Lerp(const KVector2& begin, const KVector2& end, float ratio);
+
 public:
     float   x;
     float   y;
@@ -15,6 +18,16 @@ public:
 public:
     KVector2(float tx=0.0f, float ty=0.0f) { x = tx; y = ty; }
     KVector2(int tx, int ty) { x = (float)tx; y = (float)ty; }
+    float Length() const
+    {
+        return sqrtf(x*x + y*y);
+    }
+    void Normalize()
+    {
+        const float length = Length();
+        x = x / length;
+        y = y / length;
+    }
 };
 
 inline KVector2 operator+(const KVector2& lhs, const KVector2& rhs)

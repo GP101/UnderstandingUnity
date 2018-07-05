@@ -62,3 +62,8 @@ void KVector3::RotateZ(float theta)
     x = tx;
     y = ty;
 }//KVector3::RotateZ()
+
+float KVector3::Length() const
+{
+    return sqrtf(x*x + y*y + z*z);
+}

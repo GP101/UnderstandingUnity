@@ -42,9 +42,6 @@
     <ClInclude Include="KVector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="KPolygon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -72,9 +69,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="KVector3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="KPolygon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Canvas.cpp">
