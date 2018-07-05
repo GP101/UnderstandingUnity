@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step01", "LinearAlgebra_Step01\LinearAlgebra Step01.vcxproj", "{B5A2145C-7DDF-40B7-BE52-49A662400CF4}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step10 Scan Conversion", "LinearAlgebra_Step10 Scan Conversion\LinearAlgebra Step10 Scan Conversion.vcxproj", "{93D2E440-168E-419C-8011-6E54B6BC3B6F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step11 Canvas", "LinearAlgebra_Step11 Canvas\LinearAlgebra Step11 Canvas.vcxproj", "{C482BE8C-56F2-4FDF-A613-0C1191E9A33B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step12 Perspective Projection with Shading", "LinearAlgebra_Step12 Perspective Projection with Shading\LinearAlgebra Step12 Perspective Projection with Shading.vcxproj", "{271410E4-AE97-47C0-A094-A4B8E22F082B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +183,18 @@ Global
 		{C482BE8C-56F2-4FDF-A613-0C1191E9A33B}.Release|x64.Build.0 = Release|x64
 		{C482BE8C-56F2-4FDF-A613-0C1191E9A33B}.Release|x86.ActiveCfg = Release|Win32
 		{C482BE8C-56F2-4FDF-A613-0C1191E9A33B}.Release|x86.Build.0 = Release|Win32
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Debug|Win32.Build.0 = Debug|Win32
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Debug|x64.ActiveCfg = Debug|x64
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Debug|x64.Build.0 = Debug|x64
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Debug|x86.ActiveCfg = Debug|Win32
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Debug|x86.Build.0 = Debug|Win32
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|Win32.ActiveCfg = Release|Win32
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|Win32.Build.0 = Release|Win32
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|x64.ActiveCfg = Release|x64
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|x64.Build.0 = Release|x64
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|x86.ActiveCfg = Release|Win32
+		{271410E4-AE97-47C0-A094-A4B8E22F082B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

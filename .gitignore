@@ -36,3 +36,13 @@ LinearAlgebra/.vs/config/applicationhost.config
 /LinearAlgebra/LinearAlgebra_Step10 Scan Conversion/Debug
 /LinearAlgebra/LinearAlgebra_Step10 Scan Conversion/Release
 /LinearAlgebra/*.sdf
+/LinearAlgebra/Debug
+/LinearAlgebra/Release
+/LinearAlgebra/.vs
+/LinearAlgebra/LinearAlgebra_Step10 Scan Conversion/x64
+/LinearAlgebra/LinearAlgebra_Step11 Canvas/x64
+/LinearAlgebra/LinearAlgebra_Step12 Perspective Projection with Shading/Debug
+/LinearAlgebra/LinearAlgebra_Step12 Perspective Projection with Shading/Release
+/LinearAlgebra/LinearAlgebra_Step12 Perspective Projection with Shading/x64
+/LinearAlgebra/LinearAlgebra_Step11 Canvas/Debug
+/LinearAlgebra/LinearAlgebra_Step11 Canvas/Release
