@@ -13,3 +13,26 @@ LinearAlgebra/.vs/config/applicationhost.config
 /LinearAlgebra/LinearAlgebra_Step07 Polygon/x64
 /LinearAlgebra/LinearAlgebra_Step08 Isometrix Projection/x64
 /LinearAlgebra/LinearAlgebra_Step09 Perspective Projection/x64
+/LinearAlgebra/LinearAlgebra_Step01/Debug
+/LinearAlgebra/LinearAlgebra_Step01/Release
+/LinearAlgebra/LinearAlgebra_Step02 Vectors/Debug
+/LinearAlgebra/LinearAlgebra_Step02 Vectors/Release
+/LinearAlgebra/LinearAlgebra_Step03 Basis/Debug
+/LinearAlgebra/LinearAlgebra_Step03 Basis/Release
+/LinearAlgebra/LinearAlgebra_Step04 _Prepare/Debug
+/LinearAlgebra/LinearAlgebra_Step04 _Prepare/Release
+/LinearAlgebra/LinearAlgebra_Step04 Matrix2/Debug
+/LinearAlgebra/LinearAlgebra_Step04 Matrix2/Release
+/LinearAlgebra/LinearAlgebra_Step05 Matrix2 Multiplication/Debug
+/LinearAlgebra/LinearAlgebra_Step05 Matrix2 Multiplication/Release
+/LinearAlgebra/LinearAlgebra_Step06 Homogeneous Matrix3/Debug
+/LinearAlgebra/LinearAlgebra_Step06 Homogeneous Matrix3/Release
+/LinearAlgebra/LinearAlgebra_Step07 Polygon/Debug
+/LinearAlgebra/LinearAlgebra_Step07 Polygon/Release
+/LinearAlgebra/LinearAlgebra_Step08 Isometrix Projection/Debug
+/LinearAlgebra/LinearAlgebra_Step08 Isometrix Projection/Release
+/LinearAlgebra/LinearAlgebra_Step09 Perspective Projection/Debug
+/LinearAlgebra/LinearAlgebra_Step09 Perspective Projection/Release
+/LinearAlgebra/LinearAlgebra_Step10 Scan Conversion/Debug
+/LinearAlgebra/LinearAlgebra_Step10 Scan Conversion/Release
+/LinearAlgebra/*.sdf

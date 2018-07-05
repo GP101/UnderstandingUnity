@@ -15,9 +15,9 @@ void Canvas::init()
 
 void Canvas::Clear(KRgb const& clear_col)
 {
-    for (int col = 0; col < vReso; ++col)
+    for(int col = 0; col < hReso; ++col)
     {
-        for (int row = 0; row < hReso; ++row)
+        for (int row = 0; row < vReso; ++row)
         {
             pixel(row, col) = clear_col;
         }
@@ -121,5 +121,11 @@ void Canvas::FillTriangle(int x1, int y1, KRgb const col1
             cur_yval = y;
         }
         same_yval.insert(*it);
+    }
+    if(same_yval.size( ))
+    {
+        std::set<ScannedResult>::iterator it1 = same_yval.begin( ), it2 = --same_yval.end( );
+        ScanLineSegment( it1->x, cur_yval, it1->col
+            , it2->x, cur_yval, it2->col, nullptr );
     }
 }
