@@ -28,8 +28,4 @@ public:
     KMatrix4 SetTranslation(float x, float y, float z);
 
     KMatrix4 SetProjection(float d);
-    KMatrix4 SetProjection( const float near_plane // Distance to near clipping plane
-        , const float far_plane  // Distance to far clipping plane
-        , const float fov_horiz  // Horizontal field of view angle, in radians
-        , const float fov_vert );   // Vertical field of view angle, in radians
 };//class KMatrix4

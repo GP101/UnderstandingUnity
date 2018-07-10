@@ -151,13 +151,14 @@ KMatrix4 KMatrix4::SetTranslation(float x, float y, float z)
     return *this;
 }//KMatrix4::SetTranslation()
 
-KMatrix4 KMatrix4::SetProjection(float d)
+KMatrix4 KMatrix4::SetProjection( float d )
 {
-    SetZero();
-    m_afElements[0][0] = d;
-    m_afElements[1][1] = d;
-    m_afElements[3][2] = 1;
-    m_afElements[3][3] = d;
+    SetZero( );
+    m_afElements[0][0] = 1;
+    m_afElements[1][1] = 1;
+    m_afElements[2][2] = 1;
+    m_afElements[3][2] = 1.0f / d;
+    m_afElements[3][3] = 1;
 
     return *this;
 }//KMatrix4::SetProjection

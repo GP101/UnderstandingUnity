@@ -154,32 +154,11 @@ KMatrix4 KMatrix4::SetTranslation(float x, float y, float z)
 KMatrix4 KMatrix4::SetProjection(float d)
 {
     SetZero();
-    m_afElements[0][0] = d;
-    m_afElements[1][1] = d;
-    m_afElements[3][2] = 1;
-    m_afElements[3][3] = d;
+    m_afElements[0][0] = 1;
+    m_afElements[1][1] = 1;
+    m_afElements[2][2] = 1;
+    m_afElements[3][2] = 1.0f / d;
+    m_afElements[3][3] = 1;
 
     return *this;
 }//KMatrix4::SetProjection
-
-KMatrix4 KMatrix4::SetProjection( const float near_plane // Distance to near clipping plane
-    , const float far_plane  // Distance to far clipping plane
-    , const float fov_horiz  // Horizontal field of view angle, in radians
-    , const float fov_vert )   // Vertical field of view angle, in radians
-{
-    float    h, w, Q;
-
-    w = (float)1 / tan( fov_horiz*0.5 );  // 1/tan(x) == cot(x)
-    h = (float)1 / tan( fov_vert*0.5 );   // 1/tan(x) == cot(x)
-    Q = far_plane / ( far_plane - near_plane );
-
-    KMatrix4 ret;
-    ZeroMemory( &ret, sizeof( ret ) );
-
-    m_afElements[0][0] = w;
-    m_afElements[1][1] = h;
-    m_afElements[2][2] = Q;
-    m_afElements[3][2] = -Q*near_plane;
-    m_afElements[2][3] = 1;
-    return ret;
-}// End of ProjectionMatrix

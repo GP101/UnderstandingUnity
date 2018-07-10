@@ -46,7 +46,6 @@ void DrawIndexedPrimitive( Canvas& canvas
     , int* m_indexBuffer            // index buffer
     , int primitiveCounter          // primitive counter
     , KVertex* m_vertexBuffer      // vertex buffer
-    , KVector3* m_normalBuffer      // normal buffer
     , COLORREF color_ )
 {
     int   i0, i1, i2;
@@ -68,7 +67,7 @@ void DrawIndexedPrimitive( Canvas& canvas
         normal.Normalize();
         KVector3 forward( 0, 0, -1 );
         float dot = Dot( forward, normal );
-        float shade = Dot( forward, m_normalBuffer[i] );
+        float shade = dot;
         const bool isVisible = (dot > 0);
 
         color[0] = GetRValue( color_ ) * shade;
@@ -97,7 +96,6 @@ void DrawIndexedPrimitive( Canvas& canvas
     , int* m_indexBuffer            // index buffer
     , int primitiveCounter          // primitive counter
     , KVertex* m_vertexBuffer      // vertex buffer
-    , KVector3* m_normalBuffer      // normal buffer
     , COLORREF color_
     , Bitmap& bitmap ) // texture buffer
 {
@@ -122,7 +120,7 @@ void DrawIndexedPrimitive( Canvas& canvas
         normal.Normalize( );
         KVector3 forward( 0, 0, -1 );
         float dot = Dot( forward, normal );
-        float shade = Dot( forward, m_normalBuffer[i] );
+        float shade = dot;// Dot( forward, m_normalBuffer[i] );
         const bool isVisible = ( dot > 0 );
 
         color[0] = GetRValue( color_ ) * shade;
@@ -271,26 +269,6 @@ void KPolygon::Transform(KMatrix4& mat)
     }//for
 }//KPolygon::Transform()
 
-void KPolygon::UpdateNormal()
-{
-    int   i0, i1, i2;
-    int   counter = 0;
-
-    for(int i = 0; i < m_primitiveCount; ++i)
-    {
-        // get index
-        i0 = m_indexBuffer[counter];
-        i1 = m_indexBuffer[counter + 1];
-        i2 = m_indexBuffer[counter + 2];
-
-        KVector3 normal;
-        normal = Cross( m_vertexBuffer[i0].pos - m_vertexBuffer[i1].pos, m_vertexBuffer[i0].pos - m_vertexBuffer[i2].pos );
-        normal.Normalize();
-        m_normalBuffer[i] = normal;
-        counter += 3;
-    }//for
-}
-
 void KPolygon::DrawOnCanvas( Canvas& canvas )
 {
     ::DrawIndexedPrimitive(
@@ -298,7 +276,6 @@ void KPolygon::DrawOnCanvas( Canvas& canvas )
         m_indexBuffer,      // index buffer
         12,                 // primitive(triangle) counter
         m_vertexBuffer,     // vertex buffer
-        m_normalBuffer,     // normal buffer
         m_color );
 }
 
@@ -309,7 +286,6 @@ void KPolygon::DrawOnCanvas( Canvas& canvas, Bitmap& bitmap )
         m_indexBuffer,      // index buffer
         12,                 // primitive(triangle) counter
         m_vertexBuffer,     // vertex buffer
-        m_normalBuffer,     // normal buffer
         m_color,
         bitmap );
 }
