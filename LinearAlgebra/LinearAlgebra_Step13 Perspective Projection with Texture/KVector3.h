@@ -12,11 +12,6 @@ public:
     KVector3(int tx, int ty, int tz) { x = (float)tx; y = (float)ty; z = (float)tz; }
     ~KVector3();
 
-    void Translate(float tx, float ty, float tz);
-    void Scale(float sx, float sy, float sz);
-    void RotateX(float theta);
-    void RotateY(float theta);
-    void RotateZ(float theta);
     float Length() const;
     void Normalize();
 };//class KVector3

@@ -72,26 +72,10 @@ void KPolygon::Render(HDC hdc)
         m_color );
 }//KPolygon::Render()
 
-void KPolygon::RotateX(float theta)
+void KPolygon::Transform(KMatrix4& mat)
 {
     for (int i=0; i<m_sizeVertex; ++i)
     {
-        m_vertexBuffer[i].RotateX(theta);
+        m_vertexBuffer[i] = mat * m_vertexBuffer[i];
     }//for
-}//KPolygon::RotateX(float theta)
-
-void KPolygon::RotateY(float theta)
-{
-    for (int i=0; i<m_sizeVertex; ++i)
-    {
-        m_vertexBuffer[i].RotateY(theta);
-    }//for
-}//KPolygon::RotateY(float theta)
-
-void KPolygon::Translate(float tx, float ty, float tz)
-{
-    for (int i=0; i<m_sizeVertex; ++i)
-    {
-        m_vertexBuffer[i].Translate(tx,ty,tz);
-    }//for
-}//KPolygon::Translate(float tx, float ty, float tz)
+}//KPolygon::Transform()

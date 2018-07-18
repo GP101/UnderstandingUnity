@@ -21,9 +21,5 @@ public:
     void Render(HDC hdc);
 	void SetColor(COLORREF color) { m_color = color; }
 
-    //void RotateX(float theta);
-    //void RotateY(float theta);
-    //void Translate(float tx, float ty, float tz);
-
     void Transform(KMatrix4& mat);
 };//class KPolygon

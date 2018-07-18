@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="KBasis2.h" />
+    <ClInclude Include="KMatrix4.h" />
     <ClInclude Include="KPolygon.h" />
     <ClInclude Include="KScreenCoordinate.h" />
     <ClInclude Include="KVector2.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="KMatrix4.cpp" />
     <ClCompile Include="KPolygon.cpp" />
     <ClCompile Include="KVector2.cpp" />
     <ClCompile Include="KVector3.cpp" />
