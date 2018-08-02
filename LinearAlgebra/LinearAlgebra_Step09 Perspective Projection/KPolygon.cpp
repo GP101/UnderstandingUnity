@@ -80,14 +80,14 @@ void KPolygon::SetIndexBuffer()
 
 void KPolygon::SetVertexBuffer()
 {
-    m_vertexBuffer[0] = KVector3( -5.f,  5.f, -5.f);
-    m_vertexBuffer[1] = KVector3( -5.f, -5.f, -5.f);
-    m_vertexBuffer[2] = KVector3(  5.f, -5.f, -5.f);
-    m_vertexBuffer[3] = KVector3(  5.f,  5.f, -5.f);
-    m_vertexBuffer[4] = KVector3( -5.f,  5.f,  5.f);
-    m_vertexBuffer[5] = KVector3( -5.f, -5.f,  5.f);
-    m_vertexBuffer[6] = KVector3(  5.f, -5.f,  5.f);
-    m_vertexBuffer[7] = KVector3(  5.f,  5.f,  5.f);
+    m_vertexBuffer[0] = KVector3( -5.f, -5.f,  5.f);
+    m_vertexBuffer[1] = KVector3( -5.f,  5.f,  5.f);
+    m_vertexBuffer[2] = KVector3(  5.f,  5.f,  5.f);
+    m_vertexBuffer[3] = KVector3(  5.f, -5.f,  5.f);
+    m_vertexBuffer[4] = KVector3( -5.f, -5.f, -5.f);
+    m_vertexBuffer[5] = KVector3( -5.f,  5.f, -5.f);
+    m_vertexBuffer[6] = KVector3(  5.f,  5.f, -5.f);
+    m_vertexBuffer[7] = KVector3(  5.f, -5.f, -5.f);
     m_sizeVertex = 8;
 }//KPolygon::SetVertexBuffer()
 
