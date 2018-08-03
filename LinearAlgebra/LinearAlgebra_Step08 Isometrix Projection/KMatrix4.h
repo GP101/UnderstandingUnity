@@ -26,6 +26,4 @@ public:
     KMatrix4 SetRotationZ(float fRadian);
     KMatrix4 SetScale(float fxScale, float fyScale, float fzScale);
     KMatrix4 SetTranslation(float x, float y, float z);
-
-    KMatrix4 SetProjection(float d);
 };//class KMatrix4
