@@ -40,14 +40,14 @@ void KVectorUtil::DrawLine(HDC hdc, float x0, float y0, float x1, float y1
 void KVectorUtil::DrawAxis(HDC hdc, int numHorizontalGrid, int numVerticalGrid, COLORREF color)
 {
     {
-        KVector2 v0 = KVector2(0.0f, -numVerticalGrid / 2.0f);
-        KVector2 v1 = KVector2(0.0f, numVerticalGrid / 2.0f);
+        KVector2 v0 = KVector2(0, -numVerticalGrid / 2);
+        KVector2 v1 = KVector2(0, numVerticalGrid / 2);
         KVectorUtil::DrawLine(hdc, v0, v1, 2, PS_SOLID, color );
     }
 
     {
-        KVector2 v0 = KVector2(-numHorizontalGrid / 2.0f, 0.0f);
-        KVector2 v1 = KVector2(numHorizontalGrid / 2.0f, 0.0f);
+        KVector2 v0 = KVector2(-numHorizontalGrid / 2, 0);
+        KVector2 v1 = KVector2(numHorizontalGrid / 2, 0);
         KVectorUtil::DrawLine(hdc, v0, v1, 2, PS_SOLID, color );
     }
 }

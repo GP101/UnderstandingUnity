@@ -1,5 +1,4 @@
 #pragma once
-
 #include "KVector3.h"
 #include "KMatrix4.h"
 

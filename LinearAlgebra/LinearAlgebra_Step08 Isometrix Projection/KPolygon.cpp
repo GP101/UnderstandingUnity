@@ -55,10 +55,10 @@ void KPolygon::SetIndexBuffer()
 
 void KPolygon::SetVertexBuffer()
 {
-    m_vertexBuffer[0] = KVector3( -5.0f,  -5.0f, 0.0f);
-    m_vertexBuffer[1] = KVector3( -5.0f, 5.0f, 0.0f);
-    m_vertexBuffer[2] = KVector3(  5.0f, 5.0f, 0.0f);
-    m_vertexBuffer[3] = KVector3(  5.0f,  -5.0f, 0.0f);
+    m_vertexBuffer[0] = KVector3(-5.0f, -5.0f, 0.0f);
+    m_vertexBuffer[1] = KVector3(-5.0f, 5.0f, 0.0f);
+    m_vertexBuffer[2] = KVector3(5.0f, 5.0f, 0.0f);
+    m_vertexBuffer[3] = KVector3(5.0f, -5.0f, 0.0f);
     m_sizeVertex = 4;
 }//KPolygon::SetVertexBuffer()
 
@@ -69,7 +69,7 @@ void KPolygon::Render(HDC hdc)
         m_indexBuffer,      // index buffer
         6,                  // primitive counter
         m_vertexBuffer,     // vertex buffer
-        m_color );
+        m_color);
 }//KPolygon::Render()
 
 void KPolygon::Transform(KMatrix4& mat)
