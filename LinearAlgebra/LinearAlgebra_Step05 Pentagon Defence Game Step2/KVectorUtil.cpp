@@ -29,8 +29,7 @@ KVector2 KVectorUtil::ScreenToWorld(const KVector2& v0_)
     KVector2 v = v0_ - g_screenCoordinate.origin;
     m1 = m1.GetInverse();
     m0 = m0.GetInverse();
-    v = m1 * v;
-    v = m0 * v;
+    v = m0 * m1 * v;
     return v;
 }
 
