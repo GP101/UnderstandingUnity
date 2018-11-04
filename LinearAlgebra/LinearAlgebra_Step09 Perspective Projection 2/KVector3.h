@@ -26,3 +26,17 @@ inline KVector3 operator-(const KVector3& lhs, const KVector3& rhs)
     KVector3 temp(lhs.x - rhs.x, lhs.y - rhs.y, lhs.z - rhs.z);
     return temp;
 }
+
+inline float Dot(const KVector3& lhs, const KVector3& rhs)
+{
+    return lhs.x*rhs.x + lhs.y*rhs.y + lhs.z*rhs.z;
+}
+
+inline KVector3 Cross(const KVector3& u, const KVector3& v)
+{
+    KVector3 temp;
+    temp.x = u.y*v.z - u.z*v.y;
+    temp.y = u.z*v.x - u.x*v.z;
+    temp.z = u.x*v.y - u.y*v.x;
+    return temp;
+}

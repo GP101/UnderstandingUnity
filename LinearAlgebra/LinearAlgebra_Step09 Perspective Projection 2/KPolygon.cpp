@@ -18,8 +18,16 @@ void DrawIndexedPrimitive( HDC hdc
         i1 = m_indexBuffer[counter + 1];
         i2 = m_indexBuffer[counter + 2];
 
+        KVector3 normal;
+        normal = Cross(m_vertexBuffer[i0] - m_vertexBuffer[i1], m_vertexBuffer[i0] - m_vertexBuffer[i2]);
+        KVector3 forward(0, 0, 1);
         int penStyle = PS_SOLID;
         int penWidth = 3;
+        if (Dot(forward, normal) > 0)
+        {
+            penStyle = PS_DOT;
+            penWidth = 1;
+        }
 
         // draw triangle
         KVectorUtil::DrawLine(hdc, m_vertexBuffer[i0].x, m_vertexBuffer[i0].y

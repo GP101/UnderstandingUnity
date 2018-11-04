@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step13 Perspe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Textures", "LinearAlgebra_Step14 DirectX\Tut05_Textures\Textures_2010.vcxproj", "{D3D09005-96D0-4629-88B8-122C0256058C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step09 Perspective Projection 2", "LinearAlgebra_Step09 Perspective Projection 2\LinearAlgebra Step09 Perspective Projection 2.vcxproj", "{A419C592-C07A-4F2E-9F3C-8106D39C5521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -316,6 +318,24 @@ Global
 		{D3D09005-96D0-4629-88B8-122C0256058C}.Release|x64.Build.0 = Release|x64
 		{D3D09005-96D0-4629-88B8-122C0256058C}.Release|x86.ActiveCfg = Release|Win32
 		{D3D09005-96D0-4629-88B8-122C0256058C}.Release|x86.Build.0 = Release|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Debug|Win32.Build.0 = Debug|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Debug|x64.ActiveCfg = Debug|x64
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Debug|x64.Build.0 = Debug|x64
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Debug|x86.ActiveCfg = Debug|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Debug|x86.Build.0 = Debug|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Profile|Win32.ActiveCfg = Release|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Profile|Win32.Build.0 = Release|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Profile|x64.ActiveCfg = Release|x64
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Profile|x64.Build.0 = Release|x64
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Profile|x86.ActiveCfg = Release|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Profile|x86.Build.0 = Release|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Release|Win32.ActiveCfg = Release|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Release|Win32.Build.0 = Release|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Release|x64.ActiveCfg = Release|x64
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Release|x64.Build.0 = Release|x64
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Release|x86.ActiveCfg = Release|Win32
+		{A419C592-C07A-4F2E-9F3C-8106D39C5521}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
