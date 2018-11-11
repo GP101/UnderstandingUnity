@@ -95,16 +95,17 @@ void KVectorUtil::PutPixel(HDC hdc, int x, int y, Gdiplus::Color color)
     //graphics.FillRectangle(&brush, v0.x, v0.y, dotWidth, dotHeight);
 }
 
-void KVectorUtil::ScanLine(HDC hdc, const KVector2& v0, const KVector2& v1, Gdiplus::Color color)
+void KVectorUtil::_ScanLineLow(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color)
 {
     auto sign = [](float delta){ return delta > 0.f ? 1.0f : -1.0f; };
-    float deltax = v1.x - v0.x;
-    float deltay = v1.y - v0.y;
+
+    float deltax = x1 - x0;
+    float deltay = y1 - y0;
     float deltaerr = abs(deltay / deltax); // Assume deltax != 0 (line is not vertical),
     // note that this division needs to be done in a way that preserves the fractional part
     float error = 0.0f; // No error at start
-    int y = v0.y;
-    for (int x = v0.x; x <= v1.x; ++x)
+    int y = y0;
+    for (int x = x0; x <= x1; ++x)
     {
         PutPixel(hdc, x, y, color);
         error = error + deltaerr;
@@ -112,6 +113,49 @@ void KVectorUtil::ScanLine(HDC hdc, const KVector2& v0, const KVector2& v1, Gdip
         {
             y = y + sign(deltay) * 1.0f;
             error = error - 1.0f;
+        }
+    }
+}
+
+void KVectorUtil::_ScanLineHigh(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color)
+{
+    auto sign = [](float delta){ return delta > 0.f ? 1.0f : -1.0f; };
+
+    float deltax = x1 - x0;
+    float deltay = y1 - y0;
+    float deltaerr = abs(deltax / deltay); // Assume deltax != 0 (line is not vertical),
+    // note that this division needs to be done in a way that preserves the fractional part
+    float error = 0.0f; // No error at start
+    int x = x0;
+    for (int y = y0; y <= y1; ++y)
+    {
+        PutPixel(hdc, x, y, color);
+        error = error + deltaerr;
+        if (error >= 0.5f)
+        {
+            x = x + sign(deltax) * 1.0f;
+            error = error - 1.0f;
+        }
+    }
+}
+
+void KVectorUtil::ScanLine(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color)
+{
+    if (abs(y1 - y0) < abs(x1 - x0)) {
+        if (x0 > x1) {
+            _ScanLineLow(hdc, x1, y1, x0, y0);
+        }
+        else {
+            _ScanLineLow(hdc, x0, y0, x1, y1);
+        }
+
+    }
+    else {
+        if (y0 > y1) {
+            _ScanLineHigh(hdc, x1, y1, x0, y0);
+        }
+        else {
+            _ScanLineHigh(hdc, x0, y0, x1, y1);
         }
     }
 }
