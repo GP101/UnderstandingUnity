@@ -2,7 +2,6 @@
 
 #include "KVector3.h"
 #include "KMatrix4.h"
-#include "Canvas.h"
 #include <objidl.h>
 #include <gdiplus.h>
 
@@ -40,6 +39,6 @@ public:
 
     void Transform(KMatrix4& mat);
 
-    void DrawOnCanvas( Canvas& canvas );
-    void DrawOnCanvas( Canvas& canvas, Bitmap& bitmap );
+    void DrawOnCanvas( HDC hdc );
+    void DrawOnCanvas( HDC hdc, Bitmap& bitmap );
 };//class KPolygon

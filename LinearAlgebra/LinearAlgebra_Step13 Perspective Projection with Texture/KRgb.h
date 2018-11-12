@@ -2,6 +2,8 @@
 
 #include <math.h>
 #include <iostream>
+#include <objidl.h>
+#include <gdiplus.h>
 
 inline bool approx_eq(float a, float b)
 {
@@ -18,6 +20,13 @@ public:
     KRgb(float r, float g, float b) { rgb[0] = r; rgb[1] = g; rgb[2] = b; }
     KRgb(const KRgb& rhs_) { *this = rhs_; }
     KRgb(float* pvalue_) { rgb[0] = pvalue_[0]; rgb[1] = pvalue_[1]; rgb[2] = pvalue_[2]; }
+
+    Gdiplus::Color GetGdiColor()
+    {
+        Gdiplus::Color temp(rgb[0], rgb[1], rgb[2]);
+        return temp;
+    }
+
     KRgb& operator=(const KRgb& rhs_) { rgb[0] = rhs_.rgb[0]; rgb[1] = rhs_.rgb[1]; rgb[2] = rhs_.rgb[2]; return *this; }
 
     bool operator==(const KRgb& rhs_) const { return approx_eq(rgb[0], rhs_.rgb[0]) && approx_eq(rgb[1], rhs_.rgb[1]) && approx_eq(rgb[2], rhs_.rgb[2]); }
@@ -92,6 +101,16 @@ public:
     }
 
     friend std::ostream& operator<<(std::ostream& os, KRgb const& P)       { return os << "rgb=(" << P.rgb[0] << ", " << P.rgb[1] << ", " << P.rgb[2] << ")"; }
+};
+
+struct ScannedResult
+{
+    ScannedResult(int X, int Y, KRgb const& Col) : x(X), y(Y), col(Col) {}
+
+    bool operator<(ScannedResult const& rhs) const { return (y < rhs.y) || ((y == rhs.y) && (x < rhs.x)); }
+
+    int x, y;
+    KRgb col;
 };
 
 /*

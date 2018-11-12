@@ -143,9 +143,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Canvas.h" />
-    <ClInclude Include="CanvasUtil.h" />
-    <ClInclude Include="Color.h" />
     <ClInclude Include="KBasis2.h" />
     <ClInclude Include="KGen.h" />
     <ClInclude Include="KMatrix3.h" />
@@ -163,8 +160,6 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Canvas.cpp" />
-    <ClCompile Include="CanvasUtil.cpp" />
     <ClCompile Include="KMatrix3.cpp" />
     <ClCompile Include="KMatrix4.cpp" />
     <ClCompile Include="KPolygon.cpp" />

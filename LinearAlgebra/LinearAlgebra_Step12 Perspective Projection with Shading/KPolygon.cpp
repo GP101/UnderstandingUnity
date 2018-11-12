@@ -42,7 +42,7 @@ void DrawIndexedPrimitive( HDC hdc
     }//for
 }//DrawIndexedPrimitive()
 
-void DrawIndexedPrimitive( Canvas& canvas
+void ScanDrawIndexedPrimitive( HDC hdc
     , int* m_indexBuffer            // index buffer
     , int primitiveCounter          // primitive counter
     , KVector3* m_vertexBuffer      // vertex buffer
@@ -77,14 +77,14 @@ void DrawIndexedPrimitive( Canvas& canvas
         // draw triangle
         if(isVisible == true)
         {
-            canvas.FillTriangle( m_vertexBuffer[i0].x, m_vertexBuffer[i0].y, color
+            KVectorUtil::FillTriangle( hdc, m_vertexBuffer[i0].x, m_vertexBuffer[i0].y, color
                 , m_vertexBuffer[i1].x, m_vertexBuffer[i1].y, color
                 , m_vertexBuffer[i2].x, m_vertexBuffer[i2].y, color );
-            canvas.ScanLineSegment( m_vertexBuffer[i0].x, m_vertexBuffer[i0].y, KRgb(0,0,0)
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i0].x, m_vertexBuffer[i0].y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i1].x, m_vertexBuffer[i1].y, KRgb( 0, 0, 0 ), nullptr );
-            canvas.ScanLineSegment( m_vertexBuffer[i1].x, m_vertexBuffer[i1].y, KRgb( 0, 0, 0 )
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i1].x, m_vertexBuffer[i1].y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i2].x, m_vertexBuffer[i2].y, KRgb( 0, 0, 0 ), nullptr );
-            canvas.ScanLineSegment( m_vertexBuffer[i2].x, m_vertexBuffer[i2].y, KRgb( 0, 0, 0 )
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i2].x, m_vertexBuffer[i2].y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i0].x, m_vertexBuffer[i0].y, KRgb( 0, 0, 0 ), nullptr );
         }
         // advance to next primitive
@@ -184,10 +184,10 @@ void KPolygon::Transform(KMatrix4& mat)
     }//for
 }//KPolygon::Transform()
 
-void KPolygon::DrawOnCanvas( Canvas& canvas )
+void KPolygon::DrawOnCanvas( HDC hdc )
 {
-    ::DrawIndexedPrimitive(
-        canvas,
+    ::ScanDrawIndexedPrimitive( 
+        hdc,
         m_indexBuffer,      // index buffer
         12,                 // primitive(triangle) counter
         m_vertexBuffer,     // vertex buffer

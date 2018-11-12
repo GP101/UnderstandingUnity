@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{271410E4-AE97-47C0-A094-A4B8E22F082B}</ProjectGuid>
+    <ProjectGuid>{0F2646CE-1954-4470-B11F-EE2144C02092}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LinearAlgebra</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
@@ -144,25 +144,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="KBasis2.h" />
-    <ClInclude Include="KGen.h" />
     <ClInclude Include="KMatrix3.h" />
-    <ClInclude Include="KMatrix4.h" />
-    <ClInclude Include="KPolygon.h" />
     <ClInclude Include="KRgb.h" />
     <ClInclude Include="KScreenCoordinate.h" />
     <ClInclude Include="KVector2.h" />
     <ClInclude Include="KVector3.h" />
     <ClInclude Include="KVectorUtil.h" />
     <ClInclude Include="LinearAlgebra.h" />
-    <ClInclude Include="Point.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="KMatrix3.cpp" />
-    <ClCompile Include="KMatrix4.cpp" />
-    <ClCompile Include="KPolygon.cpp" />
     <ClCompile Include="KVector2.cpp" />
     <ClCompile Include="KVector3.cpp" />
     <ClCompile Include="KVectorUtil.cpp" />

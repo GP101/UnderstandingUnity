@@ -42,7 +42,7 @@ void DrawIndexedPrimitive( HDC hdc
     }//for
 }//DrawIndexedPrimitive()
 
-void DrawIndexedPrimitive( Canvas& canvas
+void ScanDrawIndexedPrimitive( HDC hdc
     , int* m_indexBuffer            // index buffer
     , int primitiveCounter          // primitive counter
     , KVertex* m_vertexBuffer      // vertex buffer
@@ -77,14 +77,14 @@ void DrawIndexedPrimitive( Canvas& canvas
         // draw triangle
         if(isVisible == true)
         {
-            canvas.FillTriangle( m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, color
+            KVectorUtil::FillTriangle( hdc, m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, color
                 , m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, color
                 , m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, color );
-            canvas.ScanLineSegment( m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 )
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), nullptr );
-            canvas.ScanLineSegment( m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 )
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), nullptr );
-            canvas.ScanLineSegment( m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 )
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), nullptr );
         }
         // advance to next primitive
@@ -92,7 +92,7 @@ void DrawIndexedPrimitive( Canvas& canvas
     }//for
 }//DrawIndexedPrimitive()
 
-void DrawIndexedPrimitive( Canvas& canvas
+void ScanDrawIndexedPrimitive( HDC hdc
     , int* m_indexBuffer            // index buffer
     , int primitiveCounter          // primitive counter
     , KVertex* m_vertexBuffer      // vertex buffer
@@ -140,14 +140,14 @@ void DrawIndexedPrimitive( Canvas& canvas
         // draw triangle
         if(isVisible == true)
         {
-            canvas.FillTriangle( m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, uv[0]
+            KVectorUtil::FillTriangle( hdc, m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, uv[0]
                 , m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, uv[1]
                 , m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, uv[2], bitmap, color );
-            canvas.ScanLineSegment( m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 )
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), nullptr );
-            canvas.ScanLineSegment( m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 )
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), nullptr );
-            canvas.ScanLineSegment( m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 )
+            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb(0, 0, 0)
                 , m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), nullptr );
         }
         // advance to next primitive
@@ -269,20 +269,20 @@ void KPolygon::Transform(KMatrix4& mat)
     }//for
 }//KPolygon::Transform()
 
-void KPolygon::DrawOnCanvas( Canvas& canvas )
+void KPolygon::DrawOnCanvas( HDC hdc )
 {
-    ::DrawIndexedPrimitive(
-        canvas,
+    ::ScanDrawIndexedPrimitive(
+        hdc,
         m_indexBuffer,      // index buffer
         12,                 // primitive(triangle) counter
         m_vertexBuffer,     // vertex buffer
         m_color );
 }
 
-void KPolygon::DrawOnCanvas( Canvas& canvas, Bitmap& bitmap )
+void KPolygon::DrawOnCanvas( HDC hdc, Bitmap& bitmap )
 {
-    ::DrawIndexedPrimitive(
-        canvas,
+    ::ScanDrawIndexedPrimitive(
+        hdc,
         m_indexBuffer,      // index buffer
         12,                 // primitive(triangle) counter
         m_vertexBuffer,     // vertex buffer

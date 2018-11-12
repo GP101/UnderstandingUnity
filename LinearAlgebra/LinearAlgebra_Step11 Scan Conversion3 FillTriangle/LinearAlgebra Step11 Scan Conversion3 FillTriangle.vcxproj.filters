@@ -39,25 +39,13 @@
     <ClInclude Include="KScreenCoordinate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="KMatrix4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="KPolygon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="KVector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="KGen.h">
+    <ClInclude Include="KMatrix3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="KRgb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Point.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="KMatrix3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -72,12 +60,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="KVector2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="KMatrix4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="KPolygon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="KVector3.cpp">
