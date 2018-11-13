@@ -4,6 +4,7 @@
 
 KBasis2             KVectorUtil::g_basis2;
 KScreenCoordinate   KVectorUtil::g_screenCoordinate;
+extern int g_idebug;
 
 void KVectorUtil::SetScreenCoordinate(const KScreenCoordinate& screenCoord)
 {
@@ -325,6 +326,7 @@ void KVectorUtil::FillTriangle(HDC hdc, int x1, int y1, KRgb const col1
 
     int cur_yval = INT_MIN;// vReso / 2; // initialize to an invalid value.
     std::set<ScannedResult> same_yval; // of the scanned result.
+    int dbgCnt = 0;
 
     for (std::set<ScannedResult>::iterator it = scanned_pnts.begin(); it != scanned_pnts.end(); ++it)
     {
@@ -336,6 +338,12 @@ void KVectorUtil::FillTriangle(HDC hdc, int x1, int y1, KRgb const col1
                 std::set<ScannedResult>::iterator it1 = same_yval.begin(), it2 = --same_yval.end();
                 ScanLineSegment(hdc, it1->x, cur_yval, it1->col,
                     it2->x, cur_yval, it2->col, nullptr);
+
+#ifdef _DEBUG
+                //if (dbgCnt == g_idebug)
+                //    break;
+                //dbgCnt += 1;
+#endif
 
                 same_yval.clear();
             }
