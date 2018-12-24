@@ -37,7 +37,7 @@ https://www.youtube.com/watch?v=bbINTYk91J0&list=PLrrTotxaO6kg2llpeT-s8SQqgndLdb
   - OnInspectorGUI()의 원리
   - Unity 에디터 확장 기능
 
-# Linear Algebra(3D 그래픽 프로그래킹)
+# Linear Algebra(3D 그래픽 프로그래밍)
 Video tutorials for this soruce:
 https://www.youtube.com/playlist?list=PLrrTotxaO6khHInVhLSw3X16VucWW1v1Y
 ### Chap1. 선형 대수 코스 소개
@@ -97,4 +97,24 @@ https://www.youtube.com/playlist?list=PLrrTotxaO6khHInVhLSw3X16VucWW1v1Y
   - 텍스쳐 좌표계
   - 텍스쳐 맵된 큐브의 렌더링
 
+# Quaternion(사원수)
+Video tutorials for this soruce:
+https://www.youtube.com/playlist?list=PLrrTotxaO6khV32NMle-VYOou5gK52Q_1
+
+### Complex Number(복소수)
+  - Pythagorean Theorem(피타고라스의 정리)
+  - Trigonometric Function(삼각함수)
+  - Number Space(숫자 공간)
+  - Differential Identity of Cosine(삼각함수의 항등식)
+  - Complex Plane(복소 평면)
+  
+### Quaternion(쿼터니언)
+  - Quaternion Introduction(쿼터니언 소개)
+  - Quaternion Multiplication(쿼터니언의 곱셉)
+  - Conjugate Quaternion(켤레 쿼터니언)
+  
+### Euler's Formula(오일러의 공식)
+  - Taylor Series(테일러 시리즈)
+  - Euler's Formula(오일러 공식)
+  - Euler's Formula and Quaterion(오일러의 공식과 쿼터니언)
 @
