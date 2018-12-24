@@ -117,4 +117,30 @@ https://www.youtube.com/playlist?list=PLrrTotxaO6khV32NMle-VYOou5gK52Q_1
   - Taylor Series(테일러 시리즈)
   - Euler's Formula(오일러 공식)
   - Euler's Formula and Quaterion(오일러의 공식과 쿼터니언)
-@
+
+# A* and Navigation Mesh(A*와 내비게이션 메시)
+Video tutorials for this soruce:
+https://www.youtube.com/playlist?list=PLrrTotxaO6kglganAzuZjOv1CY77LZLVz
+
+1. Heap Data Structure
+2. Hash Container
+3. Open List and Priority Queue
+4. Close List and std::unordered_set
+5. AStar Algorithm
+6. Unity NavMesh and Simple Agent
+7. AStar in Unity(Example)
+
+# Data Structure and Algorithm(자료구조)
+Video tutorials for this soruce:
+https://www.youtube.com/playlist?list=PLrrTotxaO6kjtyqMVCFqE_nyOwl7Q8iTO
+
+### Data Structure(자료구조)
+  - Stack(스택)
+  - Linked List(링크드 리스트)
+  - Tree(트리)
+  - Heap(힙)
+  - Elementary Function(초등함수)
+  - Time Complexity(시간 복잡도)
+  - Binary Search Tree(이진 탐색 트리)
+  - B-Tree
+  - Equality and Equivalence(동등과 상등)
