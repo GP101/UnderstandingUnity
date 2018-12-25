@@ -363,12 +363,21 @@ void OnIdle(float fElapsedTime_)
     Rectangle(g_hdc, 0, 0, iWidth, iHeight);
 
     {
+        static float s_rotDelta = 0.0f;
+        s_rotDelta += fElapsedTime_;
+        KVector2    xaxis(1, 0);
+        KVector2    yaxis(0, 1);
+        KMatrix2    m;
+        m.SetRotation(s_rotDelta);
+        xaxis = m * xaxis;
+        yaxis = m * yaxis;
         KBasis2     basis2;
-        basis2.SetInfo(KVector2(1, 0), KVector2(0, 1));
+        //basis2.SetInfo(KVector2(1, 0), KVector2(0, 1));
+        basis2.SetInfo(xaxis, yaxis);
         KVectorUtil::SetBasis2(basis2);
 
-        KVectorUtil::DrawGrid(g_hdc, 10, 10);
-        KVectorUtil::DrawAxis(g_hdc, 10, 10, RGB(255, 0, 0), RGB(255, 0, 0));
+        KVectorUtil::DrawGrid(g_hdc, 50, 50);
+        KVectorUtil::DrawAxis(g_hdc, 50, 50, RGB(255, 0, 0), RGB(255, 0, 0));
     }
 
     KMyGame::GetInstance()->Render();
