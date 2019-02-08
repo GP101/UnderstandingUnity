@@ -1,0 +1,6 @@
+https://www.tensorflow.org/guide/tensors
+https://www.tensorflow.org/guide/extend/architecture
+
+https://www.geeksforgeeks.org/introduction-tensor-tensorflow/
+https://www.geeksforgeeks.org/introduction-to-tensorflow/
+https://www.geeksforgeeks.org/linear-regression-using-tensorflow/
