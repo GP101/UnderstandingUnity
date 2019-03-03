@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2037EA9-6281-4FFA-8EB0-7FBE0CC6527B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpApplication</RootNamespace>
+    <AssemblyName>CSharpApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VC_V10</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Custom Reference Files\NullCoalesce.cs" />
+    <None Include="Custom Reference Files\Program Anonymous Methods and Lambda Expressions.cs" />
+    <None Include="Custom Reference Files\Program Delegate and Event.cs" />
+    <None Include="Custom Reference Files\Program Delegate.cs" />
+    <None Include="Custom Reference Files\Program Extension Method.cs" />
+    <None Include="Custom Reference Files\Program Hello World.cs" />
+    <None Include="Custom Reference Files\Program Hidden Dynamic Memory Allocation.cs" />
+    <None Include="Custom Reference Files\Program property.cs" />
+    <None Include="Custom Reference Files\Program Reflection.cs" />
+    <None Include="Custom Reference Files\Program Start Function static Main.cs" />
+    <None Include="Custom Reference Files\Program typeof GetType.cs" />
+    <None Include="Custom Reference Files\Program Unity Component Model Big Base Class or Multiple Interface Inheritance.cs" />
+    <None Include="Custom Reference Files\Program Unity Component Model.cs" />
+    <None Include="Custom Reference Files\Program yield01 IEnumerator.cs" />
+    <None Include="Custom Reference Files\Program yield02 Container.cs" />
+    <None Include="Custom Reference Files\Program yield03 Unity Coroutine.cs" />
+    <None Include="Custom Reference Files\Program_Arrays.cs" />
+    <None Include="Custom Reference Files\Program_Attributes.cs" />
+    <None Include="Custom Reference Files\Program_Event01.cs" />
+    <None Include="Custom Reference Files\Program_Event02.cs" />
+    <None Include="Custom Reference Files\Program_Event03.cs" />
+    <None Include="Custom Reference Files\Program_Generic Before.cs" />
+    <None Include="Custom Reference Files\Program_Generic.cs" />
+    <None Include="Custom Reference Files\Program_ImplicitTyping.cs" />
+    <None Include="Basic Reference Files\Basic01 Type Conversion.cs" />
+    <None Include="Basic Reference Files\Basic02 class and structure.cs" />
+    <None Include="Basic Reference Files\Basic03 Array and foreach.cs" />
+    <None Include="Basic Reference Files\Basic04 string.cs" />
+    <None Include="Basic Reference Files\Basic05 interface.cs" />
+    <None Include="Basic Reference Files\Basic06 preprocessor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
