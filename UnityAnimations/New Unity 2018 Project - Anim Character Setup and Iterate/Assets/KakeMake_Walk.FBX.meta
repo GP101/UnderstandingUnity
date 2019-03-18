@@ -1,0 +1,3018 @@
+fileFormatVersion: 2
+guid: de66edfa105ccb3489f81493f2287e0a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Footsteps
+    100004: Bip001 Head
+    100006: Bip001 HeadNub
+    100008: Bip001 L Calf
+    100010: Bip001 L Clavicle
+    100012: Bip001 L Finger0
+    100014: Bip001 L Finger01
+    100016: Bip001 L Finger0Nub
+    100018: Bip001 L Finger1
+    100020: Bip001 L Finger11
+    100022: Bip001 L Finger1Nub
+    100024: Bip001 L Finger2
+    100026: Bip001 L Finger21
+    100028: Bip001 L Finger2Nub
+    100030: Bip001 L Foot
+    100032: Bip001 L Forearm
+    100034: Bip001 L Hand
+    100036: Bip001 L Thigh
+    100038: Bip001 L Toe0
+    100040: Bip001 L Toe0Nub
+    100042: Bip001 L UpperArm
+    100044: Bip001 Neck
+    100046: Bip001 Pelvis
+    100048: Bip001 R Calf
+    100050: Bip001 R Clavicle
+    100052: Bip001 R Finger0
+    100054: Bip001 R Finger01
+    100056: Bip001 R Finger0Nub
+    100058: Bip001 R Finger1
+    100060: Bip001 R Finger11
+    100062: Bip001 R Finger1Nub
+    100064: Bip001 R Finger2
+    100066: Bip001 R Finger21
+    100068: Bip001 R Finger2Nub
+    100070: Bip001 R Foot
+    100072: Bip001 R Forearm
+    100074: Bip001 R Hand
+    100076: Bip001 R Thigh
+    100078: Bip001 R Toe0
+    100080: Bip001 R Toe0Nub
+    100082: Bip001 R UpperArm
+    100084: Bip001 Spine
+    100086: Bip001 Spine1
+    100088: Character_KakeMake_Body
+    100090: //RootNode
+    100092: Object003
+    100094: Particle View 001
+    100096: Particle View 001 1
+    100098: Particle View 001 10
+    100100: Particle View 001 100
+    100102: Particle View 001 101
+    100104: Particle View 001 102
+    100106: Particle View 001 103
+    100108: Particle View 001 104
+    100110: Particle View 001 105
+    100112: Particle View 001 106
+    100114: Particle View 001 107
+    100116: Particle View 001 108
+    100118: Particle View 001 109
+    100120: Particle View 001 11
+    100122: Particle View 001 110
+    100124: Particle View 001 111
+    100126: Particle View 001 112
+    100128: Particle View 001 113
+    100130: Particle View 001 114
+    100132: Particle View 001 115
+    100134: Particle View 001 116
+    100136: Particle View 001 117
+    100138: Particle View 001 118
+    100140: Particle View 001 119
+    100142: Particle View 001 12
+    100144: Particle View 001 120
+    100146: Particle View 001 121
+    100148: Particle View 001 122
+    100150: Particle View 001 123
+    100152: Particle View 001 124
+    100154: Particle View 001 125
+    100156: Particle View 001 126
+    100158: Particle View 001 127
+    100160: Particle View 001 128
+    100162: Particle View 001 129
+    100164: Particle View 001 13
+    100166: Particle View 001 130
+    100168: Particle View 001 131
+    100170: Particle View 001 132
+    100172: Particle View 001 133
+    100174: Particle View 001 134
+    100176: Particle View 001 135
+    100178: Particle View 001 136
+    100180: Particle View 001 137
+    100182: Particle View 001 138
+    100184: Particle View 001 139
+    100186: Particle View 001 14
+    100188: Particle View 001 140
+    100190: Particle View 001 141
+    100192: Particle View 001 142
+    100194: Particle View 001 143
+    100196: Particle View 001 144
+    100198: Particle View 001 145
+    100200: Particle View 001 146
+    100202: Particle View 001 147
+    100204: Particle View 001 148
+    100206: Particle View 001 149
+    100208: Particle View 001 15
+    100210: Particle View 001 150
+    100212: Particle View 001 151
+    100214: Particle View 001 152
+    100216: Particle View 001 153
+    100218: Particle View 001 154
+    100220: Particle View 001 155
+    100222: Particle View 001 156
+    100224: Particle View 001 157
+    100226: Particle View 001 158
+    100228: Particle View 001 159
+    100230: Particle View 001 16
+    100232: Particle View 001 160
+    100234: Particle View 001 161
+    100236: Particle View 001 162
+    100238: Particle View 001 163
+    100240: Particle View 001 164
+    100242: Particle View 001 165
+    100244: Particle View 001 166
+    100246: Particle View 001 167
+    100248: Particle View 001 168
+    100250: Particle View 001 169
+    100252: Particle View 001 17
+    100254: Particle View 001 170
+    100256: Particle View 001 171
+    100258: Particle View 001 172
+    100260: Particle View 001 173
+    100262: Particle View 001 174
+    100264: Particle View 001 175
+    100266: Particle View 001 176
+    100268: Particle View 001 177
+    100270: Particle View 001 178
+    100272: Particle View 001 179
+    100274: Particle View 001 18
+    100276: Particle View 001 180
+    100278: Particle View 001 181
+    100280: Particle View 001 182
+    100282: Particle View 001 183
+    100284: Particle View 001 184
+    100286: Particle View 001 185
+    100288: Particle View 001 186
+    100290: Particle View 001 187
+    100292: Particle View 001 188
+    100294: Particle View 001 189
+    100296: Particle View 001 19
+    100298: Particle View 001 190
+    100300: Particle View 001 191
+    100302: Particle View 001 192
+    100304: Particle View 001 193
+    100306: Particle View 001 194
+    100308: Particle View 001 195
+    100310: Particle View 001 196
+    100312: Particle View 001 197
+    100314: Particle View 001 198
+    100316: Particle View 001 199
+    100318: Particle View 001 2
+    100320: Particle View 001 20
+    100322: Particle View 001 200
+    100324: Particle View 001 201
+    100326: Particle View 001 202
+    100328: Particle View 001 203
+    100330: Particle View 001 204
+    100332: Particle View 001 205
+    100334: Particle View 001 206
+    100336: Particle View 001 207
+    100338: Particle View 001 208
+    100340: Particle View 001 209
+    100342: Particle View 001 21
+    100344: Particle View 001 210
+    100346: Particle View 001 211
+    100348: Particle View 001 212
+    100350: Particle View 001 213
+    100352: Particle View 001 214
+    100354: Particle View 001 215
+    100356: Particle View 001 216
+    100358: Particle View 001 217
+    100360: Particle View 001 218
+    100362: Particle View 001 219
+    100364: Particle View 001 22
+    100366: Particle View 001 220
+    100368: Particle View 001 221
+    100370: Particle View 001 222
+    100372: Particle View 001 223
+    100374: Particle View 001 224
+    100376: Particle View 001 225
+    100378: Particle View 001 226
+    100380: Particle View 001 227
+    100382: Particle View 001 228
+    100384: Particle View 001 229
+    100386: Particle View 001 23
+    100388: Particle View 001 230
+    100390: Particle View 001 231
+    100392: Particle View 001 232
+    100394: Particle View 001 233
+    100396: Particle View 001 234
+    100398: Particle View 001 235
+    100400: Particle View 001 236
+    100402: Particle View 001 237
+    100404: Particle View 001 238
+    100406: Particle View 001 239
+    100408: Particle View 001 24
+    100410: Particle View 001 25
+    100412: Particle View 001 26
+    100414: Particle View 001 27
+    100416: Particle View 001 28
+    100418: Particle View 001 29
+    100420: Particle View 001 3
+    100422: Particle View 001 30
+    100424: Particle View 001 31
+    100426: Particle View 001 32
+    100428: Particle View 001 33
+    100430: Particle View 001 34
+    100432: Particle View 001 35
+    100434: Particle View 001 36
+    100436: Particle View 001 37
+    100438: Particle View 001 38
+    100440: Particle View 001 39
+    100442: Particle View 001 4
+    100444: Particle View 001 40
+    100446: Particle View 001 41
+    100448: Particle View 001 42
+    100450: Particle View 001 43
+    100452: Particle View 001 44
+    100454: Particle View 001 45
+    100456: Particle View 001 46
+    100458: Particle View 001 47
+    100460: Particle View 001 48
+    100462: Particle View 001 49
+    100464: Particle View 001 5
+    100466: Particle View 001 50
+    100468: Particle View 001 51
+    100470: Particle View 001 52
+    100472: Particle View 001 53
+    100474: Particle View 001 54
+    100476: Particle View 001 55
+    100478: Particle View 001 56
+    100480: Particle View 001 57
+    100482: Particle View 001 58
+    100484: Particle View 001 59
+    100486: Particle View 001 6
+    100488: Particle View 001 60
+    100490: Particle View 001 61
+    100492: Particle View 001 62
+    100494: Particle View 001 63
+    100496: Particle View 001 64
+    100498: Particle View 001 65
+    100500: Particle View 001 66
+    100502: Particle View 001 67
+    100504: Particle View 001 68
+    100506: Particle View 001 69
+    100508: Particle View 001 7
+    100510: Particle View 001 70
+    100512: Particle View 001 71
+    100514: Particle View 001 72
+    100516: Particle View 001 73
+    100518: Particle View 001 74
+    100520: Particle View 001 75
+    100522: Particle View 001 76
+    100524: Particle View 001 77
+    100526: Particle View 001 78
+    100528: Particle View 001 79
+    100530: Particle View 001 8
+    100532: Particle View 001 80
+    100534: Particle View 001 81
+    100536: Particle View 001 82
+    100538: Particle View 001 83
+    100540: Particle View 001 84
+    100542: Particle View 001 85
+    100544: Particle View 001 86
+    100546: Particle View 001 87
+    100548: Particle View 001 88
+    100550: Particle View 001 89
+    100552: Particle View 001 9
+    100554: Particle View 001 90
+    100556: Particle View 001 91
+    100558: Particle View 001 92
+    100560: Particle View 001 93
+    100562: Particle View 001 94
+    100564: Particle View 001 95
+    100566: Particle View 001 96
+    100568: Particle View 001 97
+    100570: Particle View 001 98
+    100572: Particle View 001 99
+    400000: Bip001
+    400002: Bip001 Footsteps
+    400004: Bip001 Head
+    400006: Bip001 HeadNub
+    400008: Bip001 L Calf
+    400010: Bip001 L Clavicle
+    400012: Bip001 L Finger0
+    400014: Bip001 L Finger01
+    400016: Bip001 L Finger0Nub
+    400018: Bip001 L Finger1
+    400020: Bip001 L Finger11
+    400022: Bip001 L Finger1Nub
+    400024: Bip001 L Finger2
+    400026: Bip001 L Finger21
+    400028: Bip001 L Finger2Nub
+    400030: Bip001 L Foot
+    400032: Bip001 L Forearm
+    400034: Bip001 L Hand
+    400036: Bip001 L Thigh
+    400038: Bip001 L Toe0
+    400040: Bip001 L Toe0Nub
+    400042: Bip001 L UpperArm
+    400044: Bip001 Neck
+    400046: Bip001 Pelvis
+    400048: Bip001 R Calf
+    400050: Bip001 R Clavicle
+    400052: Bip001 R Finger0
+    400054: Bip001 R Finger01
+    400056: Bip001 R Finger0Nub
+    400058: Bip001 R Finger1
+    400060: Bip001 R Finger11
+    400062: Bip001 R Finger1Nub
+    400064: Bip001 R Finger2
+    400066: Bip001 R Finger21
+    400068: Bip001 R Finger2Nub
+    400070: Bip001 R Foot
+    400072: Bip001 R Forearm
+    400074: Bip001 R Hand
+    400076: Bip001 R Thigh
+    400078: Bip001 R Toe0
+    400080: Bip001 R Toe0Nub
+    400082: Bip001 R UpperArm
+    400084: Bip001 Spine
+    400086: Bip001 Spine1
+    400088: Character_KakeMake_Body
+    400090: //RootNode
+    400092: Object003
+    400094: Particle View 001
+    400096: Particle View 001 1
+    400098: Particle View 001 10
+    400100: Particle View 001 100
+    400102: Particle View 001 101
+    400104: Particle View 001 102
+    400106: Particle View 001 103
+    400108: Particle View 001 104
+    400110: Particle View 001 105
+    400112: Particle View 001 106
+    400114: Particle View 001 107
+    400116: Particle View 001 108
+    400118: Particle View 001 109
+    400120: Particle View 001 11
+    400122: Particle View 001 110
+    400124: Particle View 001 111
+    400126: Particle View 001 112
+    400128: Particle View 001 113
+    400130: Particle View 001 114
+    400132: Particle View 001 115
+    400134: Particle View 001 116
+    400136: Particle View 001 117
+    400138: Particle View 001 118
+    400140: Particle View 001 119
+    400142: Particle View 001 12
+    400144: Particle View 001 120
+    400146: Particle View 001 121
+    400148: Particle View 001 122
+    400150: Particle View 001 123
+    400152: Particle View 001 124
+    400154: Particle View 001 125
+    400156: Particle View 001 126
+    400158: Particle View 001 127
+    400160: Particle View 001 128
+    400162: Particle View 001 129
+    400164: Particle View 001 13
+    400166: Particle View 001 130
+    400168: Particle View 001 131
+    400170: Particle View 001 132
+    400172: Particle View 001 133
+    400174: Particle View 001 134
+    400176: Particle View 001 135
+    400178: Particle View 001 136
+    400180: Particle View 001 137
+    400182: Particle View 001 138
+    400184: Particle View 001 139
+    400186: Particle View 001 14
+    400188: Particle View 001 140
+    400190: Particle View 001 141
+    400192: Particle View 001 142
+    400194: Particle View 001 143
+    400196: Particle View 001 144
+    400198: Particle View 001 145
+    400200: Particle View 001 146
+    400202: Particle View 001 147
+    400204: Particle View 001 148
+    400206: Particle View 001 149
+    400208: Particle View 001 15
+    400210: Particle View 001 150
+    400212: Particle View 001 151
+    400214: Particle View 001 152
+    400216: Particle View 001 153
+    400218: Particle View 001 154
+    400220: Particle View 001 155
+    400222: Particle View 001 156
+    400224: Particle View 001 157
+    400226: Particle View 001 158
+    400228: Particle View 001 159
+    400230: Particle View 001 16
+    400232: Particle View 001 160
+    400234: Particle View 001 161
+    400236: Particle View 001 162
+    400238: Particle View 001 163
+    400240: Particle View 001 164
+    400242: Particle View 001 165
+    400244: Particle View 001 166
+    400246: Particle View 001 167
+    400248: Particle View 001 168
+    400250: Particle View 001 169
+    400252: Particle View 001 17
+    400254: Particle View 001 170
+    400256: Particle View 001 171
+    400258: Particle View 001 172
+    400260: Particle View 001 173
+    400262: Particle View 001 174
+    400264: Particle View 001 175
+    400266: Particle View 001 176
+    400268: Particle View 001 177
+    400270: Particle View 001 178
+    400272: Particle View 001 179
+    400274: Particle View 001 18
+    400276: Particle View 001 180
+    400278: Particle View 001 181
+    400280: Particle View 001 182
+    400282: Particle View 001 183
+    400284: Particle View 001 184
+    400286: Particle View 001 185
+    400288: Particle View 001 186
+    400290: Particle View 001 187
+    400292: Particle View 001 188
+    400294: Particle View 001 189
+    400296: Particle View 001 19
+    400298: Particle View 001 190
+    400300: Particle View 001 191
+    400302: Particle View 001 192
+    400304: Particle View 001 193
+    400306: Particle View 001 194
+    400308: Particle View 001 195
+    400310: Particle View 001 196
+    400312: Particle View 001 197
+    400314: Particle View 001 198
+    400316: Particle View 001 199
+    400318: Particle View 001 2
+    400320: Particle View 001 20
+    400322: Particle View 001 200
+    400324: Particle View 001 201
+    400326: Particle View 001 202
+    400328: Particle View 001 203
+    400330: Particle View 001 204
+    400332: Particle View 001 205
+    400334: Particle View 001 206
+    400336: Particle View 001 207
+    400338: Particle View 001 208
+    400340: Particle View 001 209
+    400342: Particle View 001 21
+    400344: Particle View 001 210
+    400346: Particle View 001 211
+    400348: Particle View 001 212
+    400350: Particle View 001 213
+    400352: Particle View 001 214
+    400354: Particle View 001 215
+    400356: Particle View 001 216
+    400358: Particle View 001 217
+    400360: Particle View 001 218
+    400362: Particle View 001 219
+    400364: Particle View 001 22
+    400366: Particle View 001 220
+    400368: Particle View 001 221
+    400370: Particle View 001 222
+    400372: Particle View 001 223
+    400374: Particle View 001 224
+    400376: Particle View 001 225
+    400378: Particle View 001 226
+    400380: Particle View 001 227
+    400382: Particle View 001 228
+    400384: Particle View 001 229
+    400386: Particle View 001 23
+    400388: Particle View 001 230
+    400390: Particle View 001 231
+    400392: Particle View 001 232
+    400394: Particle View 001 233
+    400396: Particle View 001 234
+    400398: Particle View 001 235
+    400400: Particle View 001 236
+    400402: Particle View 001 237
+    400404: Particle View 001 238
+    400406: Particle View 001 239
+    400408: Particle View 001 24
+    400410: Particle View 001 25
+    400412: Particle View 001 26
+    400414: Particle View 001 27
+    400416: Particle View 001 28
+    400418: Particle View 001 29
+    400420: Particle View 001 3
+    400422: Particle View 001 30
+    400424: Particle View 001 31
+    400426: Particle View 001 32
+    400428: Particle View 001 33
+    400430: Particle View 001 34
+    400432: Particle View 001 35
+    400434: Particle View 001 36
+    400436: Particle View 001 37
+    400438: Particle View 001 38
+    400440: Particle View 001 39
+    400442: Particle View 001 4
+    400444: Particle View 001 40
+    400446: Particle View 001 41
+    400448: Particle View 001 42
+    400450: Particle View 001 43
+    400452: Particle View 001 44
+    400454: Particle View 001 45
+    400456: Particle View 001 46
+    400458: Particle View 001 47
+    400460: Particle View 001 48
+    400462: Particle View 001 49
+    400464: Particle View 001 5
+    400466: Particle View 001 50
+    400468: Particle View 001 51
+    400470: Particle View 001 52
+    400472: Particle View 001 53
+    400474: Particle View 001 54
+    400476: Particle View 001 55
+    400478: Particle View 001 56
+    400480: Particle View 001 57
+    400482: Particle View 001 58
+    400484: Particle View 001 59
+    400486: Particle View 001 6
+    400488: Particle View 001 60
+    400490: Particle View 001 61
+    400492: Particle View 001 62
+    400494: Particle View 001 63
+    400496: Particle View 001 64
+    400498: Particle View 001 65
+    400500: Particle View 001 66
+    400502: Particle View 001 67
+    400504: Particle View 001 68
+    400506: Particle View 001 69
+    400508: Particle View 001 7
+    400510: Particle View 001 70
+    400512: Particle View 001 71
+    400514: Particle View 001 72
+    400516: Particle View 001 73
+    400518: Particle View 001 74
+    400520: Particle View 001 75
+    400522: Particle View 001 76
+    400524: Particle View 001 77
+    400526: Particle View 001 78
+    400528: Particle View 001 79
+    400530: Particle View 001 8
+    400532: Particle View 001 80
+    400534: Particle View 001 81
+    400536: Particle View 001 82
+    400538: Particle View 001 83
+    400540: Particle View 001 84
+    400542: Particle View 001 85
+    400544: Particle View 001 86
+    400546: Particle View 001 87
+    400548: Particle View 001 88
+    400550: Particle View 001 89
+    400552: Particle View 001 9
+    400554: Particle View 001 90
+    400556: Particle View 001 91
+    400558: Particle View 001 92
+    400560: Particle View 001 93
+    400562: Particle View 001 94
+    400564: Particle View 001 95
+    400566: Particle View 001 96
+    400568: Particle View 001 97
+    400570: Particle View 001 98
+    400572: Particle View 001 99
+    2300000: Object003
+    3300000: Object003
+    4300000: Character_KakeMake_Body
+    4300002: Object003
+    7400000: Walk
+    9500000: //RootNode
+    13700000: Character_KakeMake_Body
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: KakeMake_Walk
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip001
+        weight: 1
+      - path: Bip001/Bip001 Footsteps
+        weight: 0
+      - path: Bip001/Bip001 Pelvis
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot/Bip001
+          L Toe0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot/Bip001
+          L Toe0/Bip001 L Toe0Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot/Bip001
+          R Toe0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot/Bip001
+          R Toe0/Bip001 R Toe0Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 Head
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 Head/Bip001
+          HeadNub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger0/Bip001
+          L Finger01
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger0/Bip001
+          L Finger01/Bip001 L Finger0Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger1/Bip001
+          L Finger11
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger1/Bip001
+          L Finger11/Bip001 L Finger1Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger2
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger2/Bip001
+          L Finger21
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L
+          Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001 L Finger2/Bip001
+          L Finger21/Bip001 L Finger2Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger0/Bip001
+          R Finger01
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger0/Bip001
+          R Finger01/Bip001 R Finger0Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger1/Bip001
+          R Finger11
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger1/Bip001
+          R Finger11/Bip001 R Finger1Nub
+        weight: 0
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger2
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger2/Bip001
+          R Finger21
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R
+          Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001 R Finger2/Bip001
+          R Finger21/Bip001 R Finger2Nub
+        weight: 0
+      - path: Character_KakeMake_Body
+        weight: 0
+      - path: Object003
+        weight: 0
+      - path: Particle View 001
+        weight: 0
+      - path: Particle View 001 1
+        weight: 0
+      - path: Particle View 001 2
+        weight: 0
+      - path: Particle View 001 3
+        weight: 0
+      - path: Particle View 001 4
+        weight: 0
+      - path: Particle View 001 5
+        weight: 0
+      - path: Particle View 001 6
+        weight: 0
+      - path: Particle View 001 7
+        weight: 0
+      - path: Particle View 001 8
+        weight: 0
+      - path: Particle View 001 9
+        weight: 0
+      - path: Particle View 001 10
+        weight: 0
+      - path: Particle View 001 11
+        weight: 0
+      - path: Particle View 001 12
+        weight: 0
+      - path: Particle View 001 13
+        weight: 0
+      - path: Particle View 001 14
+        weight: 0
+      - path: Particle View 001 15
+        weight: 0
+      - path: Particle View 001 16
+        weight: 0
+      - path: Particle View 001 17
+        weight: 0
+      - path: Particle View 001 18
+        weight: 0
+      - path: Particle View 001 19
+        weight: 0
+      - path: Particle View 001 20
+        weight: 0
+      - path: Particle View 001 21
+        weight: 0
+      - path: Particle View 001 22
+        weight: 0
+      - path: Particle View 001 23
+        weight: 0
+      - path: Particle View 001 24
+        weight: 0
+      - path: Particle View 001 25
+        weight: 0
+      - path: Particle View 001 26
+        weight: 0
+      - path: Particle View 001 27
+        weight: 0
+      - path: Particle View 001 28
+        weight: 0
+      - path: Particle View 001 29
+        weight: 0
+      - path: Particle View 001 30
+        weight: 0
+      - path: Particle View 001 31
+        weight: 0
+      - path: Particle View 001 32
+        weight: 0
+      - path: Particle View 001 33
+        weight: 0
+      - path: Particle View 001 34
+        weight: 0
+      - path: Particle View 001 35
+        weight: 0
+      - path: Particle View 001 36
+        weight: 0
+      - path: Particle View 001 37
+        weight: 0
+      - path: Particle View 001 38
+        weight: 0
+      - path: Particle View 001 39
+        weight: 0
+      - path: Particle View 001 40
+        weight: 0
+      - path: Particle View 001 41
+        weight: 0
+      - path: Particle View 001 42
+        weight: 0
+      - path: Particle View 001 43
+        weight: 0
+      - path: Particle View 001 44
+        weight: 0
+      - path: Particle View 001 45
+        weight: 0
+      - path: Particle View 001 46
+        weight: 0
+      - path: Particle View 001 47
+        weight: 0
+      - path: Particle View 001 48
+        weight: 0
+      - path: Particle View 001 49
+        weight: 0
+      - path: Particle View 001 50
+        weight: 0
+      - path: Particle View 001 51
+        weight: 0
+      - path: Particle View 001 52
+        weight: 0
+      - path: Particle View 001 53
+        weight: 0
+      - path: Particle View 001 54
+        weight: 0
+      - path: Particle View 001 55
+        weight: 0
+      - path: Particle View 001 56
+        weight: 0
+      - path: Particle View 001 57
+        weight: 0
+      - path: Particle View 001 58
+        weight: 0
+      - path: Particle View 001 59
+        weight: 0
+      - path: Particle View 001 60
+        weight: 0
+      - path: Particle View 001 61
+        weight: 0
+      - path: Particle View 001 62
+        weight: 0
+      - path: Particle View 001 63
+        weight: 0
+      - path: Particle View 001 64
+        weight: 0
+      - path: Particle View 001 65
+        weight: 0
+      - path: Particle View 001 66
+        weight: 0
+      - path: Particle View 001 67
+        weight: 0
+      - path: Particle View 001 68
+        weight: 0
+      - path: Particle View 001 69
+        weight: 0
+      - path: Particle View 001 70
+        weight: 0
+      - path: Particle View 001 71
+        weight: 0
+      - path: Particle View 001 72
+        weight: 0
+      - path: Particle View 001 73
+        weight: 0
+      - path: Particle View 001 74
+        weight: 0
+      - path: Particle View 001 75
+        weight: 0
+      - path: Particle View 001 76
+        weight: 0
+      - path: Particle View 001 77
+        weight: 0
+      - path: Particle View 001 78
+        weight: 0
+      - path: Particle View 001 79
+        weight: 0
+      - path: Particle View 001 80
+        weight: 0
+      - path: Particle View 001 81
+        weight: 0
+      - path: Particle View 001 82
+        weight: 0
+      - path: Particle View 001 83
+        weight: 0
+      - path: Particle View 001 84
+        weight: 0
+      - path: Particle View 001 85
+        weight: 0
+      - path: Particle View 001 86
+        weight: 0
+      - path: Particle View 001 87
+        weight: 0
+      - path: Particle View 001 88
+        weight: 0
+      - path: Particle View 001 89
+        weight: 0
+      - path: Particle View 001 90
+        weight: 0
+      - path: Particle View 001 91
+        weight: 0
+      - path: Particle View 001 92
+        weight: 0
+      - path: Particle View 001 93
+        weight: 0
+      - path: Particle View 001 94
+        weight: 0
+      - path: Particle View 001 95
+        weight: 0
+      - path: Particle View 001 96
+        weight: 0
+      - path: Particle View 001 97
+        weight: 0
+      - path: Particle View 001 98
+        weight: 0
+      - path: Particle View 001 99
+        weight: 0
+      - path: Particle View 001 100
+        weight: 0
+      - path: Particle View 001 101
+        weight: 0
+      - path: Particle View 001 102
+        weight: 0
+      - path: Particle View 001 103
+        weight: 0
+      - path: Particle View 001 104
+        weight: 0
+      - path: Particle View 001 105
+        weight: 0
+      - path: Particle View 001 106
+        weight: 0
+      - path: Particle View 001 107
+        weight: 0
+      - path: Particle View 001 108
+        weight: 0
+      - path: Particle View 001 109
+        weight: 0
+      - path: Particle View 001 110
+        weight: 0
+      - path: Particle View 001 111
+        weight: 0
+      - path: Particle View 001 112
+        weight: 0
+      - path: Particle View 001 113
+        weight: 0
+      - path: Particle View 001 114
+        weight: 0
+      - path: Particle View 001 115
+        weight: 0
+      - path: Particle View 001 116
+        weight: 0
+      - path: Particle View 001 117
+        weight: 0
+      - path: Particle View 001 118
+        weight: 0
+      - path: Particle View 001 119
+        weight: 0
+      - path: Particle View 001 120
+        weight: 0
+      - path: Particle View 001 121
+        weight: 0
+      - path: Particle View 001 122
+        weight: 0
+      - path: Particle View 001 123
+        weight: 0
+      - path: Particle View 001 124
+        weight: 0
+      - path: Particle View 001 125
+        weight: 0
+      - path: Particle View 001 126
+        weight: 0
+      - path: Particle View 001 127
+        weight: 0
+      - path: Particle View 001 128
+        weight: 0
+      - path: Particle View 001 129
+        weight: 0
+      - path: Particle View 001 130
+        weight: 0
+      - path: Particle View 001 131
+        weight: 0
+      - path: Particle View 001 132
+        weight: 0
+      - path: Particle View 001 133
+        weight: 0
+      - path: Particle View 001 134
+        weight: 0
+      - path: Particle View 001 135
+        weight: 0
+      - path: Particle View 001 136
+        weight: 0
+      - path: Particle View 001 137
+        weight: 0
+      - path: Particle View 001 138
+        weight: 0
+      - path: Particle View 001 139
+        weight: 0
+      - path: Particle View 001 140
+        weight: 0
+      - path: Particle View 001 141
+        weight: 0
+      - path: Particle View 001 142
+        weight: 0
+      - path: Particle View 001 143
+        weight: 0
+      - path: Particle View 001 144
+        weight: 0
+      - path: Particle View 001 145
+        weight: 0
+      - path: Particle View 001 146
+        weight: 0
+      - path: Particle View 001 147
+        weight: 0
+      - path: Particle View 001 148
+        weight: 0
+      - path: Particle View 001 149
+        weight: 0
+      - path: Particle View 001 150
+        weight: 0
+      - path: Particle View 001 151
+        weight: 0
+      - path: Particle View 001 152
+        weight: 0
+      - path: Particle View 001 153
+        weight: 0
+      - path: Particle View 001 154
+        weight: 0
+      - path: Particle View 001 155
+        weight: 0
+      - path: Particle View 001 156
+        weight: 0
+      - path: Particle View 001 157
+        weight: 0
+      - path: Particle View 001 158
+        weight: 0
+      - path: Particle View 001 159
+        weight: 0
+      - path: Particle View 001 160
+        weight: 0
+      - path: Particle View 001 161
+        weight: 0
+      - path: Particle View 001 162
+        weight: 0
+      - path: Particle View 001 163
+        weight: 0
+      - path: Particle View 001 164
+        weight: 0
+      - path: Particle View 001 165
+        weight: 0
+      - path: Particle View 001 166
+        weight: 0
+      - path: Particle View 001 167
+        weight: 0
+      - path: Particle View 001 168
+        weight: 0
+      - path: Particle View 001 169
+        weight: 0
+      - path: Particle View 001 170
+        weight: 0
+      - path: Particle View 001 171
+        weight: 0
+      - path: Particle View 001 172
+        weight: 0
+      - path: Particle View 001 173
+        weight: 0
+      - path: Particle View 001 174
+        weight: 0
+      - path: Particle View 001 175
+        weight: 0
+      - path: Particle View 001 176
+        weight: 0
+      - path: Particle View 001 177
+        weight: 0
+      - path: Particle View 001 178
+        weight: 0
+      - path: Particle View 001 179
+        weight: 0
+      - path: Particle View 001 180
+        weight: 0
+      - path: Particle View 001 181
+        weight: 0
+      - path: Particle View 001 182
+        weight: 0
+      - path: Particle View 001 183
+        weight: 0
+      - path: Particle View 001 184
+        weight: 0
+      - path: Particle View 001 185
+        weight: 0
+      - path: Particle View 001 186
+        weight: 0
+      - path: Particle View 001 187
+        weight: 0
+      - path: Particle View 001 188
+        weight: 0
+      - path: Particle View 001 189
+        weight: 0
+      - path: Particle View 001 190
+        weight: 0
+      - path: Particle View 001 191
+        weight: 0
+      - path: Particle View 001 192
+        weight: 0
+      - path: Particle View 001 193
+        weight: 0
+      - path: Particle View 001 194
+        weight: 0
+      - path: Particle View 001 195
+        weight: 0
+      - path: Particle View 001 196
+        weight: 0
+      - path: Particle View 001 197
+        weight: 0
+      - path: Particle View 001 198
+        weight: 0
+      - path: Particle View 001 199
+        weight: 0
+      - path: Particle View 001 200
+        weight: 0
+      - path: Particle View 001 201
+        weight: 0
+      - path: Particle View 001 202
+        weight: 0
+      - path: Particle View 001 203
+        weight: 0
+      - path: Particle View 001 204
+        weight: 0
+      - path: Particle View 001 205
+        weight: 0
+      - path: Particle View 001 206
+        weight: 0
+      - path: Particle View 001 207
+        weight: 0
+      - path: Particle View 001 208
+        weight: 0
+      - path: Particle View 001 209
+        weight: 0
+      - path: Particle View 001 210
+        weight: 0
+      - path: Particle View 001 211
+        weight: 0
+      - path: Particle View 001 212
+        weight: 0
+      - path: Particle View 001 213
+        weight: 0
+      - path: Particle View 001 214
+        weight: 0
+      - path: Particle View 001 215
+        weight: 0
+      - path: Particle View 001 216
+        weight: 0
+      - path: Particle View 001 217
+        weight: 0
+      - path: Particle View 001 218
+        weight: 0
+      - path: Particle View 001 219
+        weight: 0
+      - path: Particle View 001 220
+        weight: 0
+      - path: Particle View 001 221
+        weight: 0
+      - path: Particle View 001 222
+        weight: 0
+      - path: Particle View 001 223
+        weight: 0
+      - path: Particle View 001 224
+        weight: 0
+      - path: Particle View 001 225
+        weight: 0
+      - path: Particle View 001 226
+        weight: 0
+      - path: Particle View 001 227
+        weight: 0
+      - path: Particle View 001 228
+        weight: 0
+      - path: Particle View 001 229
+        weight: 0
+      - path: Particle View 001 230
+        weight: 0
+      - path: Particle View 001 231
+        weight: 0
+      - path: Particle View 001 232
+        weight: 0
+      - path: Particle View 001 233
+        weight: 0
+      - path: Particle View 001 234
+        weight: 0
+      - path: Particle View 001 235
+        weight: 0
+      - path: Particle View 001 236
+        weight: 0
+      - path: Particle View 001 237
+        weight: 0
+      - path: Particle View 001 238
+        weight: 0
+      - path: Particle View 001 239
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Bip001 Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger21
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger21
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: KakeMake_Walk(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -0, y: 38.495216, z: 0}
+      rotation: {x: 0.5235095, y: -0.51914877, z: -0.47971287, w: -0.47570786}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Bip001 Footsteps
+      parentName: Bip001
+      position: {x: 3.327434, y: 0.31968734, z: -38.032936}
+      rotation: {x: 0.033800874, y: -0.027885377, z: -0.7063018, w: 0.7065534}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: Bip001 Pelvis
+      parentName: Bip001
+      position: {x: -0.25270274, y: -0.024278637, z: 2.8884206}
+      rotation: {x: 0.51932585, y: -0.4755307, z: -0.47989014, w: -0.52333236}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000005}
+    - name: Bip001 Spine
+      parentName: Bip001 Pelvis
+      position: {x: -6.7141647, y: -1.3131509, z: -0.28732634}
+      rotation: {x: 0.0000020563602, y: 0.000000029802322, z: -0, w: -1}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.99999994}
+    - name: Bip001 Spine1
+      parentName: Bip001 Spine
+      position: {x: -11.610905, y: -0.011530638, z: 0.00066137314}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Bip001 Neck
+      parentName: Bip001 Spine1
+      position: {x: -14.517921, y: -0.0037098676, z: -0.00002336502}
+      rotation: {x: 0.003555035, y: 0.020257706, z: -0.020228121, w: 0.99958384}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001 Head
+      parentName: Bip001 Neck
+      position: {x: -4.662834, y: 0.00000023841858, z: 0.00000023841858}
+      rotation: {x: -0.0035550357, y: -0.020257706, z: 0.020228151, w: 0.99958384}
+      scale: {x: 1, y: 0.99999976, z: 1}
+    - name: Bip001 HeadNub
+      parentName: Bip001 Head
+      position: {x: -34.092896, y: 0.00000011920929, z: 0}
+      rotation: {x: -0.0000000026775524, y: 2.4936648e-18, z: -9.3132246e-10, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Bip001 L Clavicle
+      parentName: Bip001 Neck
+      position: {x: 1.7746277, y: -1.1577847, z: 4.925941}
+      rotation: {x: -0.6225377, y: -0.009447202, z: 0.78232026, w: -0.018236179}
+      scale: {x: 1.0000002, y: 1.000001, z: 1.0000012}
+    - name: Bip001 L UpperArm
+      parentName: Bip001 L Clavicle
+      position: {x: -4.739006, y: -0.00000023841858, z: 0.0000076293945}
+      rotation: {x: -0.004008306, y: 0.10704936, z: -0.0017357869, w: 0.99424416}
+      scale: {x: 1.0000002, y: 1.0000006, z: 0.99999994}
+    - name: Bip001 L Forearm
+      parentName: Bip001 L UpperArm
+      position: {x: -14.595997, y: -0.00000023841858, z: -0.0000019073486}
+      rotation: {x: 0.0000000060535967, y: 0.000000074505806, z: 0.0010918407, w: 0.99999946}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000007}
+    - name: Bip001 L Hand
+      parentName: Bip001 L Forearm
+      position: {x: -12.049648, y: -0.0000038146973, z: 0.0000019073486}
+      rotation: {x: 0.7057802, y: -0.0384527, z: -0.038422193, w: -0.70634234}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1.0000015}
+    - name: Bip001 L Finger2
+      parentName: Bip001 L Hand
+      position: {x: -6.140915, y: -0.0646286, z: 1.4788704}
+      rotation: {x: -0.10300929, y: 0.056536738, z: -0.034934342, w: 0.9924577}
+      scale: {x: 1.0000007, y: 1.0000005, z: 1.0000005}
+    - name: Bip001 L Finger21
+      parentName: Bip001 L Finger2
+      position: {x: -2.2905293, y: 0.0000019073486, z: -0.0000019073486}
+      rotation: {x: -0.02580035, y: 0.0008987, z: -0.03478247, w: 0.99906147}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: Bip001 L Finger2Nub
+      parentName: Bip001 L Finger21
+      position: {x: -2.076192, y: 0, z: -0.0000019073486}
+      rotation: {x: -0.000000029802322, y: -0.000000014901163, z: 0.000000014901163,
+        w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: Bip001 L Finger0
+      parentName: Bip001 L Hand
+      position: {x: -3.309412, y: 2.1757355, z: -3.0982285}
+      rotation: {x: -0.68413126, y: 0.18030615, z: -0.11481228, w: -0.69733226}
+      scale: {x: 1.000001, y: 1.0000007, z: 1.000001}
+    - name: Bip001 L Finger01
+      parentName: Bip001 L Finger0
+      position: {x: -2.223322, y: 0, z: 0}
+      rotation: {x: 0.00000020861616, y: 0.0000057667467, z: -0.034791432, w: 0.9993946}
+      scale: {x: 1.0000017, y: 0.9999993, z: 1.0000005}
+    - name: Bip001 L Finger0Nub
+      parentName: Bip001 L Finger01
+      position: {x: -2.2233238, y: 0, z: 0}
+      rotation: {x: -0.000000007450581, y: 0.000000029802322, z: -0.000000007450581,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001 L Finger1
+      parentName: Bip001 L Hand
+      position: {x: -6.0230865, y: -0.0015563965, z: -1.9560318}
+      rotation: {x: -0.0003980396, y: 0.036850628, z: 0.0016250006, w: 0.9993194}
+      scale: {x: 1.0000008, y: 1, z: 0.9999999}
+    - name: Bip001 L Finger11
+      parentName: Bip001 L Finger1
+      position: {x: -2.3814678, y: -0.0000019073486, z: -0.0000019073486}
+      rotation: {x: 0.000000001164153, y: -0.00000046193588, z: -0.03479343, w: 0.9993946}
+      scale: {x: 0.9999997, y: 1.000001, z: 1.0000005}
+    - name: Bip001 L Finger1Nub
+      parentName: Bip001 L Finger11
+      position: {x: -2.3814707, y: -0.0000019073486, z: 0.0000019073486}
+      rotation: {x: -1.1102232e-16, y: 0.0000000074505815, z: 0.000000014901163, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: Bip001 R Clavicle
+      parentName: Bip001 Neck
+      position: {x: 2.1682434, y: -1.2186503, z: -4.7505627}
+      rotation: {x: -0.59033036, y: -0.015097064, z: -0.80690044, w: 0.013924172}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000002}
+    - name: Bip001 R UpperArm
+      parentName: Bip001 R Clavicle
+      position: {x: -4.739006, y: 0.00000017881393, z: 0}
+      rotation: {x: -0.0040085544, y: 0.10704915, z: 0.001735769, w: -0.9942441}
+      scale: {x: 1.000001, y: 1.0000008, z: 1.000001}
+    - name: Bip001 R Forearm
+      parentName: Bip001 R UpperArm
+      position: {x: -14.596001, y: 0, z: 0}
+      rotation: {x: -0.000000050757073, y: -0.00000004470348, z: 0.0010917576, w: 0.9999994}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000002}
+    - name: Bip001 R Hand
+      parentName: Bip001 R Forearm
+      position: {x: -12.049656, y: 0, z: 0}
+      rotation: {x: 0.70578, y: -0.038452823, z: 0.038422223, w: 0.70634246}
+      scale: {x: 1.0000004, y: 1.0000004, z: 0.99999994}
+    - name: Bip001 R Finger2
+      parentName: Bip001 R Hand
+      position: {x: -6.140911, y: -0.064632416, z: -1.4788699}
+      rotation: {x: 0.1030096, y: -0.056535646, z: -0.034935664, w: 0.99245775}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000002}
+    - name: Bip001 R Finger21
+      parentName: Bip001 R Finger2
+      position: {x: -2.2905312, y: 0.0000019073486, z: 0.0000009536743}
+      rotation: {x: 0.025799958, y: -0.0008976754, z: -0.034775507, w: 0.99906164}
+      scale: {x: 0.9999996, y: 0.99999917, z: 1}
+    - name: Bip001 R Finger2Nub
+      parentName: Bip001 R Finger21
+      position: {x: -2.076192, y: 0, z: 0}
+      rotation: {x: 0.000000007450581, y: 0.000000014901161, z: 1, w: -1.7225465e-16}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bip001 R Finger0
+      parentName: Bip001 R Hand
+      position: {x: -3.30941, y: 2.1757317, z: 3.0982304}
+      rotation: {x: -0.6841312, y: 0.18030591, z: 0.11481168, w: 0.6973325}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Bip001 R Finger01
+      parentName: Bip001 R Finger0
+      position: {x: -2.22332, y: -0.0000009536743, z: 0.0000019073486}
+      rotation: {x: 0.00000008940694, y: 0.0000010579821, z: 0.034789372, w: -0.99939466}
+      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000007}
+    - name: Bip001 R Finger0Nub
+      parentName: Bip001 R Finger01
+      position: {x: -2.2233238, y: -0.0000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 1, w: 6.123234e-17}
+      scale: {x: -1.0000001, y: -1, z: -1}
+    - name: Bip001 R Finger1
+      parentName: Bip001 R Hand
+      position: {x: -6.0230827, y: -0.0015621185, z: 1.9560313}
+      rotation: {x: 0.00039800993, y: -0.03685031, z: 0.0016253699, w: 0.99931943}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Bip001 R Finger11
+      parentName: Bip001 R Finger1
+      position: {x: -2.3814735, y: 0.0000009536743, z: 0.0000009536743}
+      rotation: {x: -0.00000014711983, y: -0.0000005736946, z: -0.034792792, w: 0.99939454}
+      scale: {x: 1.0000005, y: 1.0000004, z: 0.9999998}
+    - name: Bip001 R Finger1Nub
+      parentName: Bip001 R Finger11
+      position: {x: -2.3814716, y: 0, z: 0}
+      rotation: {x: 0.000000014901161, y: 0.000000014901159, z: 1, w: -1.6081224e-16}
+      scale: {x: -1, y: -1.0000001, z: -1}
+    - name: Bip001 L Thigh
+      parentName: Bip001 Pelvis
+      position: {x: 0.0000076293945, y: 0.000013828278, z: 8.958466}
+      rotation: {x: -0.0038164856, y: -0.99997514, z: 0.000030100347, w: -0.005932436}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000006}
+    - name: Bip001 L Calf
+      parentName: Bip001 L Thigh
+      position: {x: -15.533215, y: 0, z: 0.00000047683716}
+      rotation: {x: 0.000000035759513, y: -0.000000092666596, z: 0.00094550336, w: 0.99999964}
+      scale: {x: 0.9999999, y: 1.0000006, z: 1.0000002}
+    - name: Bip001 L Foot
+      parentName: Bip001 L Calf
+      position: {x: -19.8879, y: -0.00000023841858, z: 0.00000047683716}
+      rotation: {x: -0.000023811119, y: 0.0059326403, z: -0.004761879, w: 0.99997115}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: Bip001 L Toe0
+      parentName: Bip001 L Foot
+      position: {x: -4.771782, y: 3.7531557, z: 0}
+      rotation: {x: 0.00000049033025, y: 0.00000046007318, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000007}
+    - name: Bip001 L Toe0Nub
+      parentName: Bip001 L Toe0
+      position: {x: -3.4683523, y: 0.00000023841858, z: 0}
+      rotation: {x: -0.0000000037252899, y: -0.0000000018626449, z: 1, w: 5.429345e-17}
+      scale: {x: -1.0000001, y: -1.0000001, z: -1.0000001}
+    - name: Bip001 R Thigh
+      parentName: Bip001 Pelvis
+      position: {x: -0.000011444092, y: -0.000010967255, z: -8.958467}
+      rotation: {x: -0.00381653, y: -0.99997514, z: -0.000028669834, w: 0.0059325844}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000006}
+    - name: Bip001 R Calf
+      parentName: Bip001 R Thigh
+      position: {x: -15.533216, y: 0, z: 0.0000014305115}
+      rotation: {x: 0.00000002353772, y: 0.00000004936009, z: 0.0009455037, w: 0.9999996}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000008}
+    - name: Bip001 R Foot
+      parentName: Bip001 R Calf
+      position: {x: -19.887901, y: 0.00000047683716, z: -0.0000009536743}
+      rotation: {x: 0.00002375232, y: -0.0059325728, z: -0.004761915, w: 0.9999711}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000006}
+    - name: Bip001 R Toe0
+      parentName: Bip001 R Foot
+      position: {x: -4.771782, y: 3.7531557, z: 0}
+      rotation: {x: 0.00000054942745, y: 0.00000040093428, z: -0.70710677, w: 0.70710677}
+      scale: {x: 1.0000012, y: 1.0000001, z: 1.0000013}
+    - name: Bip001 R Toe0Nub
+      parentName: Bip001 R Toe0
+      position: {x: -3.468352, y: 0.000000029802322, z: 0}
+      rotation: {x: 1.1641532e-10, y: -3.4197004e-10, z: 3.9810552e-20, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Character_KakeMake_Body
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Object003
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 193.8125, y: -0.1875, z: -108.734375}
+      rotation: {x: -0.68847907, y: 0, z: -0, w: 0.7252562}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15329.379, y: -18185.639, z: 396.05524}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 1
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17705.322, y: -177.51312, z: -215.91031}
+      rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 2
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4743.1616, y: -19113.057, z: -1047.8329}
+      rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 3
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21085.926, y: 0, z: -1424.585}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 4
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 8872.296, y: 0, z: -6679.0376}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 5
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5756.5474, y: -18185.639, z: -1028.5293}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 6
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3380.6016, y: -177.51312, z: -1640.4954}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 7
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16342.765, y: -19113.057, z: -2472.4182}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 8
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7755.078, y: 0, z: -7615.054}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 9
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1229118, y: 0, z: -533060.3}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 10
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540693, y: -1818563.9, z: 31990.469}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 11
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778287.2, y: -17751.318, z: -29206.086}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 12
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -482071.25, y: -1911305.6, z: -112398.34}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 13
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23546.492, y: -240.38678, z: -493.53513}
+      rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 14
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35760.12, y: -240.3862, z: -5747.9883}
+      rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 15
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38875.87, y: -18426.023, z: -97.48258}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 16
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41251.812, y: -417.8999, z: -709.4455}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 17
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28289.654, y: -19353.443, z: -1541.3708}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 18
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 19
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12213.625, y: 0, z: -5254.453}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 20
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15329.375, y: -18185.625, z: 396.0625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 21
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17705.312, y: -177.5, z: -215.90625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 22
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4743.1875, y: -19113.062, z: -1047.8281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 23
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21085.938, y: 0, z: -1424.5781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 24
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 8872.3125, y: 0, z: -6679.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 25
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5756.5625, y: -18185.625, z: -1028.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 26
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3380.625, y: -177.5, z: -1640.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 27
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16342.75, y: -19113.062, z: -2472.4219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 28
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7755.0625, y: 0, z: -7615.047}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 29
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1229118, y: 0, z: -533060.3}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 30
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540693, y: -1818564, z: 31990.453}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 31
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778287.2, y: -17751.312, z: -29206.11}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 32
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -482071.2, y: -1911305.8, z: -112398.36}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 33
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23546.5, y: -240.375, z: -493.53125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 34
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35760.125, y: -240.375, z: -5747.9844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 35
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38875.875, y: -18426, z: -97.484375}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 36
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41251.812, y: -417.875, z: -709.4531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 37
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28289.625, y: -19353.438, z: -1541.375}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 38
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 39
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12213.625, y: 0, z: -5254.453}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 40
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15329.375, y: -18185.625, z: 396.0625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 41
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17705.312, y: -177.5, z: -215.90625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 42
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4743.1875, y: -19113.062, z: -1047.8281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 43
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21085.938, y: 0, z: -1424.5781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 44
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 8872.3125, y: 0, z: -6679.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 45
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5756.5625, y: -18185.625, z: -1028.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 46
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3380.625, y: -177.5, z: -1640.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 47
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16342.75, y: -19113.062, z: -2472.4219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 48
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7755.0625, y: 0, z: -7615.047}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 49
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1229118, y: 0, z: -533060.3}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 50
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540693, y: -1818564, z: 31990.453}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 51
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778287.2, y: -17751.312, z: -29206.11}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 52
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -482071.2, y: -1911305.8, z: -112398.36}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 53
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23546.5, y: -240.375, z: -493.53125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 54
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35760.125, y: -240.375, z: -5747.9844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 55
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38875.875, y: -18426, z: -97.484375}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 56
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41251.812, y: -417.875, z: -709.4531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 57
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28289.625, y: -19353.438, z: -1541.375}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 58
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 59
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12213.625, y: 0, z: -5254.453}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 60
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15329.375, y: -18185.625, z: 396.0625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 61
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17705.312, y: -177.5, z: -215.90625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 62
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4743.1875, y: -19113.062, z: -1047.8281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 63
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21085.938, y: 0, z: -1424.5781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 64
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 8872.3125, y: 0, z: -6679.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 65
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5756.5625, y: -18185.625, z: -1028.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 66
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3380.625, y: -177.5, z: -1640.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 67
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16342.75, y: -19113.062, z: -2472.4219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 68
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7755.0625, y: 0, z: -7615.047}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 69
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1229118, y: 0, z: -533060.3}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 70
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540693, y: -1818563.8, z: 31990.453}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 71
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778287.2, y: -17751.312, z: -29206.11}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 72
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -482071.2, y: -1911305.5, z: -112398.36}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 73
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23546.5, y: -240.375, z: -493.53125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 74
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35760.125, y: -240.375, z: -5747.9844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 75
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38875.875, y: -18426, z: -97.484375}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 76
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41251.812, y: -417.875, z: -709.4531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 77
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28289.625, y: -19353.438, z: -1541.375}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 78
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 79
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12213.625, y: 0, z: -5254.453}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 80
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15329.375, y: -18185.625, z: 396.0625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 81
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17705.312, y: -177.5, z: -215.90625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 82
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4743.1875, y: -19113.062, z: -1047.8281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 83
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21085.938, y: 0, z: -1424.5781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 84
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 8872.3125, y: 0, z: -6679.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 85
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3380.625, y: -177.5, z: -1640.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 86
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16342.75, y: -19113.062, z: -2472.4219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 87
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7755.0625, y: 0, z: -7615.047}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 88
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1229118, y: 0, z: -533060.3}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 89
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540693, y: -1818563.8, z: 31990.453}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 90
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778287.2, y: -17751.312, z: -29206.11}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 91
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -482071.2, y: -1911305.5, z: -112398.36}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 92
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23546.5, y: -240.375, z: -493.53125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 93
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35760.125, y: -240.375, z: -5747.9844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 94
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38875.875, y: -18426, z: -97.484375}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 95
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41251.812, y: -417.875, z: -709.4531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 96
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28289.625, y: -19353.438, z: -1541.375}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 97
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5756.5625, y: -18185.625, z: -1028.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 98
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 99
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12213.629, y: 0, z: -5254.4526}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 100
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15329.379, y: -18185.639, z: 396.05524}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 101
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17705.322, y: -177.51312, z: -215.91031}
+      rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 102
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4743.1616, y: -19113.057, z: -1047.8329}
+      rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 103
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21085.926, y: 0, z: -1424.585}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 104
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 8872.296, y: 0, z: -6679.0376}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 105
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5756.5474, y: -18185.639, z: -1028.5293}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 106
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3380.6016, y: -177.51312, z: -1640.4954}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 107
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16342.765, y: -19113.057, z: -2472.4182}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 108
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7755.078, y: 0, z: -7615.054}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 109
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1229118, y: 0, z: -533060.3}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 110
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540693, y: -1818563.9, z: 31990.469}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 111
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778287.2, y: -17751.318, z: -29206.086}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 112
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -482071.25, y: -1911305.6, z: -112398.34}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 113
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23546.492, y: -240.38678, z: -493.53513}
+      rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 114
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35760.12, y: -240.3862, z: -5747.9883}
+      rotation: {x: -0.7071067, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 115
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38875.87, y: -18426.023, z: -97.48258}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 116
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41251.812, y: -417.8999, z: -709.4455}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 117
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28289.654, y: -19353.443, z: -1541.3708}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 118
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 119
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 193.8125, y: 0, z: -103.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 120
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12019.8125, y: 0, z: -5357.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 121
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15135.5625, y: -18185.625, z: 292.5625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 122
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17511.5, y: -177.5, z: -319.40625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 123
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4549.375, y: -19113.062, z: -1151.3281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 124
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21279.75, y: 0, z: -1528.0781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 125
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 9066.125, y: 0, z: -6782.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 126
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5950.375, y: -18185.625, z: -1132.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 127
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3574.4375, y: -177.5, z: -1744}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 128
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16536.562, y: -19113.062, z: -2575.9219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 129
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7561.25, y: 0, z: -7718.547}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 130
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1228924.2, y: 0, z: -533163.8}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 131
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540499.2, y: -1818564, z: 31886.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 132
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778093.2, y: -17751.312, z: -29309.61}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 133
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -481877.44, y: -1911305.5, z: -112501.86}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 134
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23352.688, y: -240.375, z: -597.03125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 135
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35566.312, y: -240.375, z: -5851.4844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 136
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38682.062, y: -18426, z: -200.98438}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 137
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41058, y: -417.875, z: -812.9531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 138
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28095.812, y: -19353.438, z: -1644.875}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 139
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 193.8125, y: 0, z: -103.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 140
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12019.8125, y: 0, z: -5357.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 141
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15135.5625, y: -18185.625, z: 292.5625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 142
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17511.5, y: -177.5, z: -319.40625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 143
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4549.375, y: -19113.062, z: -1151.3281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 144
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21279.75, y: 0, z: -1528.0781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 145
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 9066.125, y: 0, z: -6782.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 146
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5950.375, y: -18185.625, z: -1132.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 147
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3574.4375, y: -177.5, z: -1744}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 148
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16536.562, y: -19113.062, z: -2575.9219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 149
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7561.25, y: 0, z: -7718.547}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 150
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1228924.2, y: 0, z: -533163.8}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 151
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540499.2, y: -1818564, z: 31886.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 152
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778093.2, y: -17751.312, z: -29309.61}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 153
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -481877.44, y: -1911305.5, z: -112501.86}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 154
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23352.688, y: -240.375, z: -597.03125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 155
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35566.312, y: -240.375, z: -5851.4844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 156
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38682.062, y: -18426, z: -200.98438}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 157
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41058, y: -417.875, z: -812.9531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 158
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28095.812, y: -19353.438, z: -1644.875}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 159
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 193.8125, y: 0, z: -103.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 160
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12019.8125, y: 0, z: -5357.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 161
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15135.5625, y: -18185.625, z: 292.5625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 162
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17511.5, y: -177.5, z: -319.40625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 163
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4549.375, y: -19113.062, z: -1151.3281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 164
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21279.75, y: 0, z: -1528.0781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 165
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 9066.125, y: 0, z: -6782.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 166
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5950.375, y: -18185.625, z: -1132.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 167
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3574.4375, y: -177.5, z: -1744}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 168
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16536.562, y: -19113.062, z: -2575.9219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 169
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12213.629, y: 0, z: -5254.4526}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 170
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1228924.2, y: 0, z: -533163.8}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 171
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540499.2, y: -1818564, z: 31886.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 172
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778093.2, y: -17751.312, z: -29309.61}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 173
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -481877.44, y: -1911305.8, z: -112501.86}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 174
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23352.688, y: -240.375, z: -597.03125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 175
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35566.312, y: -240.375, z: -5851.4844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 176
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38682.062, y: -18426, z: -200.98438}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 177
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41058, y: -417.875, z: -812.9531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 178
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28095.812, y: -19353.438, z: -1644.875}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 179
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 193.8125, y: 0, z: -103.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 180
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12019.8125, y: 0, z: -5357.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 181
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15135.5625, y: -18185.625, z: 292.5625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 182
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17511.5, y: -177.5, z: -319.40625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 183
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4549.375, y: -19113.062, z: -1151.3281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 184
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21279.75, y: 0, z: -1528.0781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 185
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 9066.125, y: 0, z: -6782.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 186
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5950.375, y: -18185.625, z: -1132.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 187
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3574.4375, y: -177.5, z: -1744}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 188
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16536.562, y: -19113.062, z: -2575.9219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 189
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7561.25, y: 0, z: -7718.547}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 190
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1228924.2, y: 0, z: -533163.8}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 191
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540499.2, y: -1818564, z: 31886.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 192
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778093.2, y: -17751.312, z: -29309.61}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 193
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -481877.44, y: -1911305.8, z: -112501.86}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 194
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23352.688, y: -240.375, z: -597.03125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 195
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35566.312, y: -240.375, z: -5851.4844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 196
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38682.062, y: -18426, z: -200.98438}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 197
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41058, y: -417.875, z: -812.9531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 198
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28095.812, y: -19353.438, z: -1644.875}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 199
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 193.8125, y: 0, z: -103.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 200
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12019.8125, y: 0, z: -5357.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 201
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15135.5625, y: -18185.625, z: 292.5625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 202
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17511.5, y: -177.5, z: -319.40625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 203
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4549.375, y: -19113.062, z: -1151.3281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 204
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7561.25, y: 0, z: -7718.547}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 205
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 9066.125, y: 0, z: -6782.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 206
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5950.375, y: -18185.625, z: -1132.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 207
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3574.4375, y: -177.5, z: -1744}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 208
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16536.562, y: -19113.062, z: -2575.9219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 209
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7561.25, y: 0, z: -7718.547}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 210
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1228924.2, y: 0, z: -533163.8}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 211
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540499.2, y: -1818563.8, z: 31886.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 212
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778093.2, y: -17751.312, z: -29309.61}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 213
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -481877.44, y: -1911305.5, z: -112501.86}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 214
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23352.688, y: -240.375, z: -597.03125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 215
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35566.312, y: -240.375, z: -5851.4844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 216
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38682.062, y: -18426, z: -200.98438}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 217
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41058, y: -417.875, z: -812.9531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 218
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28095.812, y: -19353.438, z: -1644.875}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 219
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 193.8125, y: 0, z: -103.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 220
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -12019.8125, y: 0, z: -5357.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 221
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -15135.5625, y: -18185.625, z: 292.5625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 222
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -17511.5, y: -177.5, z: -319.40625}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 223
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -4549.375, y: -19113.062, z: -1151.3281}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 224
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21279.75, y: 0, z: -1528.0781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 225
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 9066.125, y: 0, z: -6782.5312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 226
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 5950.375, y: -18185.625, z: -1132.0312}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 227
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 3574.4375, y: -177.5, z: -1744}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 228
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 16536.562, y: -19113.062, z: -2575.9219}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 229
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -7561.25, y: 0, z: -7718.547}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 230
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1228924.2, y: 0, z: -533163.8}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 231
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1540499.2, y: -1818563.8, z: 31886.953}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 232
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -1778093.2, y: -17751.312, z: -29309.61}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 233
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -481877.44, y: -1911305.5, z: -112501.86}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 234
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -23352.688, y: -240.375, z: -597.03125}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 235
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -35566.312, y: -240.375, z: -5851.4844}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 236
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -38682.062, y: -18426, z: -200.98438}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 237
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -41058, y: -417.875, z: -812.9531}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 238
+      parentName: KakeMake_Walk(Clone)
+      position: {x: -28095.812, y: -19353.438, z: -1644.875}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Particle View 001 239
+      parentName: KakeMake_Walk(Clone)
+      position: {x: 21279.75, y: 0, z: -1528.0781}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
