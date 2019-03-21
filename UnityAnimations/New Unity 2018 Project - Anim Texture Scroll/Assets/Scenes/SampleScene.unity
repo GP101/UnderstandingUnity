@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 359301821}
   - component: {fileID: 359301820}
   - component: {fileID: 359301819}
+  - component: {fileID: 359301824}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -214,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   materialIndex: 0
-  uvAnimationRate: {x: 0.1, y: 0}
+  uvAnimationRate: {x: 0, y: 0}
   textureName: _MainTex
 --- !u!64 &359301820
 MeshCollider:
@@ -289,6 +290,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &359301824
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359301818}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9aa28b0951048234ca62b4fe2dd8879a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
