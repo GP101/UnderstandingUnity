@@ -145,8 +145,17 @@ https://www.youtube.com/playlist?list=PLrrTotxaO6kjtyqMVCFqE_nyOwl7Q8iTO
   - B-Tree
   - Equality and Equivalence(동등과 상등)
 
-# Cubic Spline
-(will be covered on 2019)
+# Cubic Hermite Spline
+Video tutorials for this soruce:
+https://www.youtube.com/playlist?list=PLrrTotxaO6kju2PIHNMyKJUXfPSuocuA6
+
+1. Spline Course Introduction(스플라인 코스소개)
+2. Differentiation(미분)
+3. Numerical Differentiation(수치 미분)
+4. What is Spline?(스플라인이란?)
+5. Hermite Spline(에르미트 스플라인)
+6. Hermite Spline Implementation(에르미트 스플라인 구현)
+7. Hermite Splice Application(에르미트 스플라인 응용)
 
 # Physics Engine
 (will be covered on 2020)
