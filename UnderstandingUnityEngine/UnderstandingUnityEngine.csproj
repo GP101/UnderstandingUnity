@@ -44,6 +44,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Reference Files\UnityComponentModel01 MonoBehavior.cs" />
+    <None Include="Reference Files\UnityComponentModel02 AddComponent.cs" />
+    <None Include="Reference Files\UnityComponentModel03 GetComponent.cs" />
+    <None Include="Reference Files\UnityComponentModel04 Adding Test Component.cs" />
+    <None Include="Reference Files\UnityComponentModel05 Broadcast.cs" />
+    <None Include="Reference Files\UnityComponentModel06 GameLoop.cs" />
     <None Include="Reference Files\Program Attribute.cs" />
     <None Include="Reference Files\Program GameLoop with Coroutine.cs" />
     <None Include="Reference Files\Program GameLoop.cs" />
