@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Test : MonoBehaviour
+{
+    private MeshRenderer _renderer;
+    public float _speed = 10.0f;
+    // Start is called before the first frame update
+    void Start()
+    {
+        _renderer = gameObject.GetComponent<MeshRenderer>();
+        _renderer.material.color = Color.red;
+        StartCoroutine( MovePosition() );
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
+
+    private IEnumerator MovePosition()
+    {
+        Vector3 pos = transform.position;
+        Vector3 pos2 = pos;
+        while( Vector3.Distance( pos, pos2 ) < 10.0f )
+        {
+            pos2 = transform.position;
+            pos2.x += Time.deltaTime * _speed;
+            transform.position = pos2;
+            yield return null;
+        }
+        //yield return new WaitForEndOfFrame();
+        yield return null;
+    }
+}
