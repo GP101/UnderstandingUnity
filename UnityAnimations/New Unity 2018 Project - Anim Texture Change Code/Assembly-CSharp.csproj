@@ -62,19 +62,19 @@
   <ItemGroup>
     <Compile Include="Assets\TextureChange.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -278,19 +278,19 @@
       <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/github/UnderstandingUnity/UnityAnimations/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Svn/jintaeks/UnityTest/New Unity 2018 Project - Anim Texture Change Code/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity 2018/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -21,9 +21,9 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 9570287fcf3080d45b9e47e9eb32c30a, type: 2}
-    - time: 1.95
+    - time: 0.5
       value: {fileID: 2100000, guid: 7b9af91ad4212b84aaf097fe2723eea9, type: 2}
-    - time: 2
+    - time: 0.53333336
       value: {fileID: 2100000, guid: e3ba46ea8937f6f4eaf9635de3db58cb, type: 2}
     attribute: m_Materials.Array.data[1]
     path: Character_KakeMake_Body
@@ -52,7 +52,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.0166667
+    m_StopTime: 0.55
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
