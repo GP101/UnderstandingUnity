@@ -364,7 +364,7 @@ void OnIdle(float fElapsedTime_)
 
     {
         static float s_rotDelta = 0.0f;
-        s_rotDelta += fElapsedTime_;
+        s_rotDelta += fElapsedTime_ * 0.2f;
         KVector2    xaxis(1, 0);
         KVector2    yaxis(0, 1);
         KMatrix2    m;
