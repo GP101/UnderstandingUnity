@@ -104,7 +104,7 @@
     <None Include="Basic Reference Files\Basic04 string.cs" />
     <None Include="Basic Reference Files\Basic05 interface.cs" />
     <None Include="Basic Reference Files\Basic06 preprocessor.cs" />
-    <Compile Include="Program.cs" />
+    <None Include="Basic Reference Files\Basic05-2 virtual and override.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

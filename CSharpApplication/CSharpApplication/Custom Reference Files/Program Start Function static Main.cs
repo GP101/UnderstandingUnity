@@ -14,6 +14,7 @@ class Program1
 
 class Program2
 {
+    // static void Main() is a start function.
     static void Main( string[] args ) {
         Console.WriteLine( "Hello World 2" );
     }
