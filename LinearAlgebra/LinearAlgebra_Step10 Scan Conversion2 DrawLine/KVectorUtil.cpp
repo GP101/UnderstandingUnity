@@ -101,7 +101,7 @@ void KVectorUtil::_ScanLineLow(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus:
 
     float deltax = x1 - x0;
     float deltay = y1 - y0;
-    float deltaerr = abs(deltay / deltax); // Assume deltax != 0 (line is not vertical),
+    float deltaerr = abs(long(deltay / deltax)); // Assume deltax != 0 (line is not vertical),
     // note that this division needs to be done in a way that preserves the fractional part
     float error = 0.0f; // No error at start
     int y = y0;
@@ -123,7 +123,7 @@ void KVectorUtil::_ScanLineHigh(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus
 
     float deltax = x1 - x0;
     float deltay = y1 - y0;
-    float deltaerr = abs(deltax / deltay); // Assume deltax != 0 (line is not vertical),
+    float deltaerr = abs(long(deltax / deltay)); // Assume deltax != 0 (line is not vertical),
     // note that this division needs to be done in a way that preserves the fractional part
     float error = 0.0f; // No error at start
     int x = x0;

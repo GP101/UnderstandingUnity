@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step01", "LinearAlgebra_Step01\LinearAlgebra Step01.vcxproj", "{B5A2145C-7DDF-40B7-BE52-49A662400CF4}"
 EndProject
@@ -40,6 +40,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step15 Texture", "LinearAlgebra_Step15 Texture\LinearAlgebra Step15 Texture.vcxproj", "{3148E1DD-3012-4D62-972B-8B9579760B1A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Textures", "LinearAlgebra_Step99 DirectX\Tut05_Textures\Textures_2010.vcxproj", "{D3D09005-96D0-4629-88B8-122C0256058C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step05 Matrix2 Multiplication2 Problem", "LinearAlgebra_Step05 Matrix2 Multiplication2 Problem\LinearAlgebra_Step05 Matrix2 Multiplication2 Problem.vcxproj", "{4E79BC18-EA3D-4229-B80C-090445E7014F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -396,6 +398,24 @@ Global
 		{D3D09005-96D0-4629-88B8-122C0256058C}.Release|x64.Build.0 = Release|x64
 		{D3D09005-96D0-4629-88B8-122C0256058C}.Release|x86.ActiveCfg = Release|Win32
 		{D3D09005-96D0-4629-88B8-122C0256058C}.Release|x86.Build.0 = Release|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Debug|Win32.Build.0 = Debug|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Debug|x64.ActiveCfg = Debug|x64
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Debug|x64.Build.0 = Debug|x64
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Debug|x86.ActiveCfg = Debug|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Debug|x86.Build.0 = Debug|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Profile|Win32.ActiveCfg = Release|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Profile|Win32.Build.0 = Release|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Profile|x64.ActiveCfg = Release|x64
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Profile|x64.Build.0 = Release|x64
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Profile|x86.ActiveCfg = Release|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Profile|x86.Build.0 = Release|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|Win32.ActiveCfg = Release|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|Win32.Build.0 = Release|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|x64.ActiveCfg = Release|x64
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|x64.Build.0 = Release|x64
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|x86.ActiveCfg = Release|Win32
+		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

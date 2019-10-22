@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EF22908A-F6C1-41ED-B60B-E8AF156AD35B}</ProjectGuid>
+    <ProjectGuid>{4E79BC18-EA3D-4229-B80C-090445E7014F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LinearAlgebra</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
