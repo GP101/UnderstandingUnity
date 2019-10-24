@@ -6,52 +6,37 @@ using System.Threading.Tasks;
 
 class Program
 {
-    public class ITransactions
+    public class KBase
     {
         // interface members
-        public virtual void showTransaction() { }
-        public virtual double getAmount() { return 0.0;  }
+        public virtual void Start() { Console.WriteLine( "KBase::Start" ); }
+        public virtual void Update() { Console.WriteLine( "KBase::Update" ); }
     }
 
-    public class Transaction : ITransactions
+    public class KDerived : KBase
     {
-        private string tCode;
-        private string date;
-        private double amount;
-
-        public Transaction()
-        {
-            tCode = " ";
-            date = " ";
-            amount = 0.0;
-        }
-        public Transaction(string c, string d, double a)
-        {
-            tCode = c;
-            date = d;
-            amount = a;
-        }
-        public double getAmount()
-        {
-            return amount;
-        }
-        public override void showTransaction()
-        {
-            Console.WriteLine("Transaction: {0}", tCode);
-            Console.WriteLine("Date: {0}", date);
-            Console.WriteLine("Amount: {0}", getAmount());
-        }
+        public virtual void Start() { Console.WriteLine( "KDerived::Start" ); }
+        public override void Update() { base.Update(); Console.WriteLine( "KDerived::Update" ); }
     }
     class Tester
     {
-        static void Main(string[] args)
+        static void Main( string[] args )
         {
-            Transaction t1 = new Transaction("001", "8/10/2012", 78900.00);
-            ITransactions t2 = new Transaction("002", "9/10/2012", 451900.00);
-
-            t1.showTransaction();
-            t2.showTransaction();
+            KDerived d = new KDerived();
+            d.Start();
+            d.Update();
+            KBase b = new KDerived();
+            b.Start();
+            b.Update();
             Console.ReadKey();
+            /*
+                KDerived::Start
+                KBase::Update
+                KDerived::Update
+                KBase::Start
+                KBase::Update
+                KDerived::Update
+            */
         }
     }
 }
