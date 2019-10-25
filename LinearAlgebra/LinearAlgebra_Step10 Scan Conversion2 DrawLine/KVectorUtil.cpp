@@ -98,10 +98,11 @@ void KVectorUtil::PutPixel(HDC hdc, int x, int y, Gdiplus::Color color)
 void KVectorUtil::_ScanLineLow(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color)
 {
     auto sign = [](float delta){ return delta > 0.f ? 1.0f : -1.0f; };
+    auto myabs = []( float value ) -> float { return value > 0.f ? value : -value; };
 
     float deltax = x1 - x0;
     float deltay = y1 - y0;
-    float deltaerr = abs(long(deltay / deltax)); // Assume deltax != 0 (line is not vertical),
+    float deltaerr = myabs(deltay / deltax); // Assume deltax != 0 (line is not vertical),
     // note that this division needs to be done in a way that preserves the fractional part
     float error = 0.0f; // No error at start
     int y = y0;
@@ -120,10 +121,11 @@ void KVectorUtil::_ScanLineLow(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus:
 void KVectorUtil::_ScanLineHigh(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color)
 {
     auto sign = [](float delta){ return delta > 0.f ? 1.0f : -1.0f; };
+    auto myabs = []( float value ) -> float { return value > 0.f ? value : -value; };
 
     float deltax = x1 - x0;
     float deltay = y1 - y0;
-    float deltaerr = abs(long(deltax / deltay)); // Assume deltax != 0 (line is not vertical),
+    float deltaerr = myabs(deltax / deltay); // Assume deltax != 0 (line is not vertical),
     // note that this division needs to be done in a way that preserves the fractional part
     float error = 0.0f; // No error at start
     int x = x0;
