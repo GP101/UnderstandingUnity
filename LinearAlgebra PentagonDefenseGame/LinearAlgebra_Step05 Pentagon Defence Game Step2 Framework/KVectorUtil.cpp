@@ -20,12 +20,12 @@ void KVectorUtil::SetBasis2(const KBasis2& basis2)
 KVector2 KVectorUtil::ScreenToWorld(const KVector2& v0_)
 {
     KMatrix2 m0;
-    m0.Set(g_basis2.basis0.x, g_basis2.basis1.x
-        , g_basis2.basis0.y, g_basis2.basis1.y);
+    m0.Set( g_basis2.basis0, g_basis2.basis1 );
     KMatrix2 m1;
-    m1.Set(g_screenCoordinate.axis0.x, g_screenCoordinate.axis1.x
-        , g_screenCoordinate.axis0.y, g_screenCoordinate.axis1.y);
+    m1.Set( g_screenCoordinate.axis0, g_screenCoordinate.axis1 );
 
+    // Vscreen = Mscreen * Mworld * Vworld
+    // MworldInv * MscreenInv * Vscreen = Vworld
     KVector2 v = v0_ - g_screenCoordinate.origin;
     m1 = m1.GetInverse();
     m0 = m0.GetInverse();

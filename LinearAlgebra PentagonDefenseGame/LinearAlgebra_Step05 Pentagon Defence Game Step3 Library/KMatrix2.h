@@ -20,13 +20,20 @@ public:
         _22 = e22;
     }
     ~KMatrix2() {}
-    void Set(float e11, float e12, float e21, float e22)
-    {
-        _11 = e11;
-        _12 = e12;
-        _21 = e21;
-        _22 = e22;
-    }
+	void Set(float e11, float e12, float e21, float e22)
+	{
+		_11 = e11;
+		_12 = e12;
+		_21 = e21;
+		_22 = e22;
+	}
+	void Set(const KVector2& basis0, const KVector2& basis1)
+	{
+		_11 = basis0.x;
+		_12 = basis1.x;
+		_21 = basis0.y;
+		_22 = basis1.y;
+	}
 
     void SetIdentity()
     {
