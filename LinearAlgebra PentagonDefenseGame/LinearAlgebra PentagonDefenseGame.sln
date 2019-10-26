@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step05 Pentagon Defence Game Step1", "LinearAlgebra_Step05 Pentagon Defence Game Step1\LinearAlgebra Step05 Pentagon Defence Game Step1.vcxproj", "{DC4FA63A-FD4C-4DF9-B71A-0C386E89D443}"
 EndProject
