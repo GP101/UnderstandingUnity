@@ -26,19 +26,29 @@ KVector2 KVectorUtil::ScreenToWorld(const KVector2& v0_)
 
     // Vscreen = Mscreen * Mworld * Vworld
     // MworldInv * MscreenInv * Vscreen = Vworld
-    KVector2 v = v0_ - g_screenCoordinate.origin;
-    m1 = m1.GetInverse();
-    m0 = m0.GetInverse();
-    v = m0 * m1 * v;
+    KVector2 v = v0_ - g_screenCoordinate.origin; // inverse translation
+    KMatrix2 m1Inv = m1.GetInverse();
+    KMatrix2 m0Inv = m0.GetInverse();
+    v = m0Inv * m1Inv * v;
     return v;
 }
 
 void KVectorUtil::DrawLine(HDC hdc, const KVector2& v0_, const KVector2& v1_, int lineWidth, int penStyle, COLORREF color_)
 {
-    KVector2 v0 = g_basis2.Transform(v0_);
-    KVector2 v1 = g_basis2.Transform(v1_);
-    v0 = g_screenCoordinate.Transform(v0);
-    v1 = g_screenCoordinate.Transform(v1);
+	KMatrix2    basis;
+	KMatrix2    screen;
+	basis.Set(g_basis2.basis0, g_basis2.basis1);
+	screen.Set(g_screenCoordinate.axis0, g_screenCoordinate.axis1);
+
+	KVector2 v0;// = g_basis2.Transform(v0_);
+	KVector2 v1;// = g_basis2.Transform(v1_);
+	v0 = screen * basis * v0_;
+	v1 = screen * basis * v1_;
+
+    //v0 = g_screenCoordinate.Transform(v0);
+    //v1 = g_screenCoordinate.Transform(v1);
+	v0 = v0 + g_screenCoordinate.origin;
+	v1 = v1 + g_screenCoordinate.origin;
 
     HPEN hpen = CreatePen(penStyle, lineWidth, color_);
     HGDIOBJ original = SelectObject(hdc, hpen);
