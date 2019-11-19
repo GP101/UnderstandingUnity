@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Textures", "LinearAlgebra_S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step05 Matrix2 Multiplication2 Problem", "LinearAlgebra_Step05 Matrix2 Multiplication2 Problem\LinearAlgebra_Step05 Matrix2 Multiplication2 Problem.vcxproj", "{4E79BC18-EA3D-4229-B80C-090445E7014F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step13b Viewing Transform", "LinearAlgebra_Step13b Viewing Transform\LinearAlgebra_Step13b Viewing Transform.vcxproj", "{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -416,6 +418,24 @@ Global
 		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|x64.Build.0 = Release|x64
 		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|x86.ActiveCfg = Release|Win32
 		{4E79BC18-EA3D-4229-B80C-090445E7014F}.Release|x86.Build.0 = Release|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Debug|Win32.Build.0 = Debug|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Debug|x64.ActiveCfg = Debug|x64
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Debug|x64.Build.0 = Debug|x64
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Debug|x86.ActiveCfg = Debug|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Debug|x86.Build.0 = Debug|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Profile|Win32.ActiveCfg = Release|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Profile|Win32.Build.0 = Release|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Profile|x64.ActiveCfg = Release|x64
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Profile|x64.Build.0 = Release|x64
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Profile|x86.ActiveCfg = Release|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Profile|x86.Build.0 = Release|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Release|Win32.ActiveCfg = Release|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Release|Win32.Build.0 = Release|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Release|x64.ActiveCfg = Release|x64
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Release|x64.Build.0 = Release|x64
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Release|x86.ActiveCfg = Release|Win32
+		{EA0A1392-6D29-45E4-AD2B-0DA2FA910F5F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
