@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Reflection;
 
 class Program1
@@ -21,29 +19,18 @@ class Program1
     {
         Sample sample = new Sample { Name = "Hello", age = 49 };
         var sampleType = typeof( Sample );
+        //System.Type sampleType = typeof(Sample);
         var nameProperty = sampleType.GetProperty( "Name" );
         Console.WriteLine( "Property: " + nameProperty.GetValue( sample ) );
 
         var updateMethod = sampleType.GetMethod( "Update" );
+        //System.Reflection.MethodInfo updateMethod = sampleType.GetMethod("Update");
         object[] paramArray = new object[1] { 1.2f };
         updateMethod.Invoke( sample, paramArray );
     }
 }
 /** output
-    Type: Program1, Base Type: System.Object
-            Method: ToString
-            Method: Equals
-            Method: GetHashCode
-            Method: GetType
-    Type: Sample, Base Type: System.Object
-            Prop: Name
-            Field: age
-            Method: get_Name
-            Method: set_Name
-            Method: Update
-            Method: ToString
-            Method: Equals
-            Method: GetHashCode
-            Method: GetType
+    Property: Hello
+    Sample.Update(), 1.2
     Press any key to continue . . .
 */

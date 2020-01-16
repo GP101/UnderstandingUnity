@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="StepByStepFiles\Program34 yield06 collection.cs" />
+    <None Include="StepByStepFiles\Program06 typeof02.cs" />
+    <None Include="StepByStepFiles\Program10 Generic05 container.cs" />
     <None Include="StepByStepFiles\Program01 Start Function static Main01.cs" />
     <None Include="StepByStepFiles\Program02 ImplicitTyping01.cs" />
     <None Include="StepByStepFiles\Program03 NullCoalesce.cs" />
@@ -67,7 +70,6 @@
     <None Include="StepByStepFiles\Program24 Event01.cs" />
     <None Include="StepByStepFiles\Program25 Event02.cs" />
     <None Include="StepByStepFiles\Program26 Event03.cs" />
-    <None Include="StepByStepFiles\Program27 Event04 Delegate and Event.cs" />
     <None Include="StepByStepFiles\Program28 Extension Method01.cs" />
     <None Include="StepByStepFiles\Program29 yield01.cs" />
     <None Include="StepByStepFiles\Program30 yield02.cs" />
@@ -92,9 +94,6 @@
     <None Include="Custom Reference Files\Program yield03 Unity Coroutine.cs" />
     <None Include="Custom Reference Files\Program_Arrays.cs" />
     <None Include="Custom Reference Files\Program_Attributes.cs" />
-    <None Include="Custom Reference Files\Program_Event01.cs" />
-    <None Include="Custom Reference Files\Program_Event02.cs" />
-    <None Include="Custom Reference Files\Program_Event03.cs" />
     <None Include="Custom Reference Files\Program_Generic Before.cs" />
     <None Include="Custom Reference Files\Program_Generic.cs" />
     <None Include="Custom Reference Files\Program_ImplicitTyping.cs" />
@@ -105,6 +104,17 @@
     <None Include="Basic Reference Files\Basic05 interface.cs" />
     <None Include="Basic Reference Files\Basic06 preprocessor.cs" />
     <None Include="Basic Reference Files\Basic05-2 virtual and override.cs" />
+    <None Include="Basic Reference Files\Basic03-2 - Array Lookup Table.cs" />
+    <None Include="Basic Reference Files\Basic05 interface02 virtual.cs" />
+    <None Include="Basic Reference Files\Basic05-2 abstract base class.cs" />
+    <None Include="Basic Reference Files\Basic05-3 dynamic01.cs" />
+    <None Include="Basic Reference Files\Basic05-4 dynamic02.cs" />
+    <None Include="Basic Reference Files\Basic05-5  virtual sealed.cs" />
+    <None Include="Basic Reference Files\Basic05-6  template method.cs" />
+    <None Include="Custom Reference Files\Program Indexer.cs" />
+    <None Include="Custom Reference Files\Program Covariance01.cs" />
+    <None Include="Custom Reference Files\Program Covariance02.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

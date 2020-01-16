@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Reflection;
 
 class Program1
@@ -13,7 +10,8 @@ class Program1
     {
         HelloDelegate hello1 = new HelloDelegate( SayHello );
         hello1 += new HelloDelegate(SayHello2);
-        hello1();
+        //hello1 += SayHello2;
+        Test(hello1);
     }
     static void SayHello()
     {

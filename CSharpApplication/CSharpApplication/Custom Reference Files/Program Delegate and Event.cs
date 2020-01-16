@@ -1,51 +1,51 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 
-namespace CsharpConsole
+class Program1
 {
-    class Program
+    public class HelloEventArgs : EventArgs
     {
-        static void Main(string[] args)
+        public int Time { get; set; }
+    }
+    public delegate void HelloDelegate(object sender, HelloEventArgs args);
+
+    class Sample
+    {
+        public event HelloDelegate hello;
+
+        public void DoAction()
         {
-            var tower = new ClockTower();
-            var person = new Person("John", tower);
-            tower.ChimeFivePm();
+            hello(this, new HelloEventArgs { Time = 2 });
         }
     }
 
-    public class Person
+    class Subscriber
     {
         private string _name;
-        private ClockTower _tower;
-
-        public Person(string name, ClockTower tower)
+        private Sample _sample;
+        public Subscriber(string name, Sample s)
         {
             _name = name;
-            _tower = tower;
-
-            _tower.Chime = () => { Console.WriteLine("{0} heard the clock chime.", _name); };
-            // you can use operator=() for delegate. But in event, there is no operator=().
-            // jintaeks on 2017-12-11_22-57
-            _tower.Chime += () => { Console.WriteLine("{0} heard the clock chime 2.", _name); };
+            _sample = s;
+            _sample.hello += this.Handler;
         }
-
+        public void Handler(object sender, HelloEventArgs args)
+        {
+            Console.WriteLine("{0} received event {1} from {2}."
+                , _name, args.Time, sender.ToString());
+        }
     }
-    public delegate void ChimeEventHandler();
-    public class ClockTower
+
+    static void Main(string[] args)
     {
-        //public event ChimeEventHandler Chime;
-        public ChimeEventHandler Chime;
-        public void ChimeFivePm()
-        {
-            Chime();
-        }
-
-        public void ChimeSixPm()
-        {
-            Chime();
-        }
+        Sample s = new Sample();
+        Subscriber t = new Subscriber("John", s);
+        Subscriber t2 = new Subscriber("Jane", s);
+        s.DoAction();
     }
+    /** output:
+        John received event 2 from Program1+Sample.
+        Jane received event 2 from Program1+Sample.
+    */
 }

@@ -6,32 +6,27 @@ using System.Threading.Tasks;
 
 class Program
 {
-    public interface KBase
+    public abstract class KBase
     {
         // interface members
-        void Start();
-        void Update();
+        public abstract void Start();
+        public abstract void Update();
     }
 
     public class KDerived : KBase
     {
-        public void Start() { Console.WriteLine( "KDerived::Start" ); }
-        public void Update() { Console.WriteLine( "KDerived::Update" ); }
+        public override void Start() { Console.WriteLine( "KDerived::Start" ); }
+        public override void Update() { Console.WriteLine( "KDerived::Update" ); }
     }
     class Tester
     {
         static void Main( string[] args )
         {
-            KDerived d = new KDerived();
-            d.Start();
-            d.Update();
             KBase b = new KDerived();
             b.Start();
             b.Update();
             Console.ReadKey();
             /*
-                KDerived::Start
-                KDerived::Update
                 KDerived::Start
                 KDerived::Update
             */

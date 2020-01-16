@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpApplication
 {
@@ -28,7 +26,7 @@ namespace CSharpApplication
 
         public double getArea()
         {
-            return ( Radius * Radius ) * ( 22 / 7 );
+            return Math.PI * Radius * Radius;
         }
     }
 
@@ -51,14 +49,21 @@ namespace CSharpApplication
             {
                 Console.WriteLine( "shape2 is {0}", typeof( Circle ) );
             }
+            //System.Type t0 = shape1.GetType();
 
-            System.Type type = typeof( int );
+            bool b = (shape2 is Rectangle);
+            Console.WriteLine( "shape2 is Rectangle = {0}", b );
+            //if( shape2.GetType() == typeof( Circle ) ) {
+            //    Console.WriteLine( "shape2.GetType() == typeof( Circle )" );
+            //}
 
-            int radius = 3;
+            System.Type type = typeof(int);
+
+            int radius = 1;
             Console.WriteLine( "Area = {0}", radius * radius * Math.PI );
             Console.WriteLine( "The type is {0}",
-                              ( radius * radius * Math.PI ).GetType()
-            );
+                              ( radius * radius * Math.PI ).GetType() );
+            Console.WriteLine();
         }
     }
 }

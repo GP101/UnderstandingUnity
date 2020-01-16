@@ -15,8 +15,14 @@ class Program
 
     public class KDerived : KBase
     {
-        public void Start() { Console.WriteLine( "KDerived::Start" ); }
-        public void Update() { Console.WriteLine( "KDerived::Update" ); }
+        public virtual void Start() { Console.WriteLine( "KDerived::Start" ); }
+        public virtual void Update() { Console.WriteLine( "KDerived::Update" ); }
+    }
+
+    public class KFinal : KDerived
+    {
+        public override void Start() { Console.WriteLine( "KFinal::Start" ); }
+        public override void Update() { Console.WriteLine( "KFinal::Update" ); }
     }
     class Tester
     {
@@ -28,11 +34,16 @@ class Program
             KBase b = new KDerived();
             b.Start();
             b.Update();
+            KBase c = new KFinal();
+            c.Start();
+            c.Update();
             Console.ReadKey();
             /*
                 KDerived::Start
+                KBase::Update
                 KDerived::Update
-                KDerived::Start
+                KBase::Start
+                KBase::Update
                 KDerived::Update
             */
         }

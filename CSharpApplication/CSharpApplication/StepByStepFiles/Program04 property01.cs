@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CsharpConsole
 {
@@ -39,8 +36,11 @@ namespace CsharpConsole
             e1.Name = "jintaeks";
             e1.Value = 50;
 
-            System.Console.WriteLine( "Employee number: {0}", Employee.Counter );
-            System.Console.WriteLine( "Employee name: {0}", e1.Name );
+            System.Console.WriteLine("Employee number: {0}", Employee.Counter);
+            System.Console.WriteLine("Employee name: {0}", e1.Name);
+            /** output:
+                Employee number: 1
+                Employee name: jintaeks */
         }
     }
 }

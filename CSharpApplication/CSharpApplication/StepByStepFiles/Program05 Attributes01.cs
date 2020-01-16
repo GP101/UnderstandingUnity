@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Reflection;
 using System.Diagnostics;
 
@@ -26,30 +23,40 @@ class Program1
     {
         KTest t = new KTest();
         t.Print();
-        t.Print2();
+        t.Print2(); // will not called in 'Release' configuration
 
-        KTest2 t2 = new KTest2();
+        KTest2 t2 = new KTest2(); // generate compile-time warning
 
-        //var assembly = Assembly.GetExecutingAssembly();
-        //var types = assembly.GetTypes();
-        //foreach( var type in types )
-        //{
-        //    Console.WriteLine( "Type: " + type.Name + ", Base Type: " + type.BaseType );
-        //}
+        bool isDefined = false;
+        System.Type t3 = typeof(KTest3);
+        MethodInfo m = t3.GetMethod("Method");
+
+        isDefined = Attribute.IsDefined( t3, typeof( SampleAttribute ) );
+        Console.WriteLine( "isDefined = {0}", isDefined );
+
+        isDefined = Attribute.IsDefined( m, typeof( SampleAttribute ) );
+        Console.WriteLine( "isDefined = {0}", isDefined );
+
         Console.ReadKey( true );
+        /*  output in 'Debug' run.
+            Print
+            Print2
+            isDefined = True
+            isDefined = False
+        */
     }
     [AttributeUsage( AttributeTargets.Class | AttributeTargets.Method )]
-    public class SampleAttributes : Attribute
+    public class SampleAttribute : Attribute
     {
         public string Name { get; set; }
         public int Version { get; set; }
     }
 
-    [SampleAttributes( Name = "Name", Version = 9 )]
+    [SampleAttribute( Name = "Name", Version = 9 )]
     public class KTest3
     {
         public int IntValue { get; set; }
-        [SampleAttributes]
+        //[Sample]
         public void Method() { }
     }
 }

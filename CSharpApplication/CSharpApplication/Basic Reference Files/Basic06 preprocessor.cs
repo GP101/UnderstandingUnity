@@ -1,19 +1,19 @@
 ﻿#define DEBUG
-//#define VC_V10
+//#define IOS
 using System;
 
 public class TestClass
 {
     public static void Main()
     {
-#if( DEBUG && !VC_V10 )
-         Console.WriteLine("DEBUG is defined");
-#elif ( !DEBUG && VC_V10 )
-         Console.WriteLine("VC_V10 is defined");
-#elif ( DEBUG && VC_V10 )
-        Console.WriteLine( "DEBUG and VC_V10 are defined" );
+#if( DEBUG && !IOS )
+        Console.WriteLine("DEBUG is defined");
+#elif ( !DEBUG && IOS )
+         Console.WriteLine("IOS is defined");
+#elif ( DEBUG && IOS )
+        Console.WriteLine( "DEBUG and IOS are defined" );
 #else
-         Console.WriteLine("DEBUG and VC_V10 are not defined");
+         Console.WriteLine("DEBUG and IOS are not defined");
 #endif
         Console.ReadKey();
     }
