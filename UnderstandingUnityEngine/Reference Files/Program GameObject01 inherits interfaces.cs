@@ -10,7 +10,11 @@ namespace UnderstandingUnityEngine
     {
     }
 
-    public abstract class MonoBehavior : Component
+    public class Behavior : Component
+    {
+    }
+
+    public abstract class MonoBehavior : Behavior
     {
         public List<Component> m_components;
         public MonoBehavior()
@@ -30,16 +34,20 @@ namespace UnderstandingUnityEngine
         }
     }
 
-    public interface BoxCollider
+    public interface IBoxCollider
     {
         void GetCollider();
     }
-    public interface MeshRenderer
+    public interface IMeshRenderer
     {
         void GetMaterial();
     }
 
-    public class GameObject : BoxCollider, MeshRenderer
+    public class Base
+    {
+    }
+
+    public class GameObject : Base, IBoxCollider, IMeshRenderer
     {
         public void GetCollider() { }
         public void GetMaterial() { }

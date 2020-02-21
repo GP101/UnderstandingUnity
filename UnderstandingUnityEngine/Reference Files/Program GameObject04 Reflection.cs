@@ -13,7 +13,11 @@ namespace UnderstandingUnityEngine
         public void SendMessage(string methodName) { }
     }
 
-    public class MonoBehavior : Component
+    public class Behavior : Component
+    {
+    }
+
+    public class MonoBehavior : Behavior
     {
         public void Invoke(string methodName) { }
     }

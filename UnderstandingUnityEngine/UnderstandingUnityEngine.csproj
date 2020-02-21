@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Reference Files\UnityComponentModel07 GameLoop with Coroutine.cs" />
     <None Include="Reference Files\UnityComponentModel01 MonoBehavior.cs" />
     <None Include="Reference Files\UnityComponentModel02 AddComponent.cs" />
     <None Include="Reference Files\UnityComponentModel03 GetComponent.cs" />
