@@ -19,7 +19,7 @@ void DrawIndexedPrimitive( HDC hdc
         i2 = m_indexBuffer[counter + 2];
 
         KVector3 normal;
-        normal = Cross(m_vertexBuffer[i0] - m_vertexBuffer[i1], m_vertexBuffer[i0] - m_vertexBuffer[i2]);
+        normal = Cross(m_vertexBuffer[i1] - m_vertexBuffer[i0], m_vertexBuffer[i2] - m_vertexBuffer[i0]);
         KVector3 forward(0, 0, 1);
         int penStyle = PS_SOLID;
         int penWidth = 3;

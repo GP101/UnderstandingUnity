@@ -63,12 +63,12 @@ void ScanDrawIndexedPrimitive( HDC hdc
         i2 = m_indexBuffer[counter + 2];
 
         KVector3 normal;
-        normal = Cross( m_vertexBuffer[i0] - m_vertexBuffer[i1], m_vertexBuffer[i0] - m_vertexBuffer[i2] );
+        normal = Cross( m_vertexBuffer[i1] - m_vertexBuffer[i0], m_vertexBuffer[i2] - m_vertexBuffer[i0] );
         normal.Normalize();
-        KVector3 forward( 0, 0, -1 );
+        KVector3 forward( 0, 0, 1 );
         float dot = Dot( forward, normal );
         float shade = Dot(light.m_dir, normal);
-        const bool isVisible = (dot > 0);
+        const bool isVisible = (dot < 0);
 
         KRgb color = light.m_ambient + light.m_diffuse * mtrl.m_diffuse * shade + light.m_specular * mtrl.m_specular;
         color[0] = __min(1.0f, color[0]);
