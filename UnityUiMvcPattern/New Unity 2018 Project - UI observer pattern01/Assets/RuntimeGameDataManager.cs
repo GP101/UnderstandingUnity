@@ -5,19 +5,19 @@ using UnityEngine;
 // step 1
 public class RuntimeGameDataManager : MonoBehaviour
 {
-    static public RuntimeGameDataManager instance;
-    private int _count = 0;
-    private int _levelCount = 0;
-    private int _level = 1;
-    private bool _isWin = false;
+    //static public RuntimeGameDataManager instance;
+    private static int _count = 0;
+    private static int _levelCount = 0;
+    private static int _level = 1;
+    private static bool _isWin = false;
 
     void Awake()
     {
-        if( instance == null )
-            instance = this;
+        //if( instance == null )
+        //    instance = this;
     }
 
-    public void AddCount( int c )
+    public static void AddCount( int c )
     {
         _count += 1;
         _levelCount += 1;
@@ -30,12 +30,12 @@ public class RuntimeGameDataManager : MonoBehaviour
             _isWin = true;
     }
 
-    public int GetCount()
+    public static int GetCount()
     {
         return _count;
     }
 
-    public bool IsWin()
+    public static bool IsWin()
     {
         return _isWin;
     }

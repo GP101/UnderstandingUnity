@@ -33,14 +33,14 @@ public class UIController : MonoBehaviour
     void _UpdateData()
     {
         // observer pattern
-        int uiDataStamp = RuntimeGameDataManager.instance.GetDataStamp();
+        int uiDataStamp = RuntimeGameDataManager.GetDataStamp();
         if( uiDataStamp != _uiDataStamp )
         {
             _uiDataStamp = uiDataStamp; // update ui data stamp
 
-            int count = RuntimeGameDataManager.instance.GetCount();
+            int count = RuntimeGameDataManager.GetCount();
             countText.text = count.ToString();
-            if( RuntimeGameDataManager.instance.IsWin() )
+            if( RuntimeGameDataManager.IsWin() )
             {
                 winText.text = "You Win!";
             }

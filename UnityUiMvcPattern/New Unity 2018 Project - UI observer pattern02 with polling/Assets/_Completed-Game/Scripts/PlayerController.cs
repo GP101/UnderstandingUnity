@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
 
 			// Run the 'SetCountText()' function (see below)
 			//SetCountText (); // step 0
-            RuntimeGameDataManager.instance.AddCount( 1 ); // step 1
+            RuntimeGameDataManager.AddCount( 1 ); // step 1
 		}
 	}
 

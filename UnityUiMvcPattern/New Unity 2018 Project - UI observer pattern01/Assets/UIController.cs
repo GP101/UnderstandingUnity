@@ -12,9 +12,9 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int count = RuntimeGameDataManager.instance.GetCount();
+        int count = RuntimeGameDataManager.GetCount();
         countText.text = count.ToString();
-        if( RuntimeGameDataManager.instance.IsWin() )
+        if( RuntimeGameDataManager.IsWin() )
         {
             winText.text = "You Win!";
         }
