@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step05 Pentag
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step05-2 Separating Axis Theorem SAT", "LinearAlgebra_Step05-2 Separating Axis Theorem SAT\LinearAlgebra_Step05-2 Separating Axis Theorem SAT.vcxproj", "{6A7199FB-6DD4-4BB7-9E11-2375FF0DC2C4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step05-3 FABRIK", "LinearAlgebra_Step05-3 FABRIK\LinearAlgebra_Step05-3 FABRIK.vcxproj", "{12D39DB6-DFF8-457A-9E76-043D52105991}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -116,6 +118,24 @@ Global
 		{6A7199FB-6DD4-4BB7-9E11-2375FF0DC2C4}.Release|x64.Build.0 = Release|x64
 		{6A7199FB-6DD4-4BB7-9E11-2375FF0DC2C4}.Release|x86.ActiveCfg = Release|Win32
 		{6A7199FB-6DD4-4BB7-9E11-2375FF0DC2C4}.Release|x86.Build.0 = Release|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Debug|Win32.Build.0 = Debug|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Debug|x64.ActiveCfg = Debug|x64
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Debug|x64.Build.0 = Debug|x64
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Debug|x86.ActiveCfg = Debug|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Debug|x86.Build.0 = Debug|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Profile|Win32.ActiveCfg = Release|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Profile|Win32.Build.0 = Release|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Profile|x64.ActiveCfg = Release|x64
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Profile|x64.Build.0 = Release|x64
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Profile|x86.ActiveCfg = Release|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Profile|x86.Build.0 = Release|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Release|Win32.ActiveCfg = Release|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Release|Win32.Build.0 = Release|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Release|x64.ActiveCfg = Release|x64
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Release|x64.Build.0 = Release|x64
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Release|x86.ActiveCfg = Release|Win32
+		{12D39DB6-DFF8-457A-9E76-043D52105991}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
