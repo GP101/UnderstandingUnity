@@ -112,3 +112,28 @@ void KVectorUtil::DrawCircle( HDC hdc, const KVector2& center, float radius, int
         p1 = p2;
     }
 }
+
+float KVectorUtil::LengthSquared(const KVector2& a, const KVector2& b)
+{
+    KVector2 t = b - a;
+    return t.x * t.x + t.y * t.y;
+}
+
+float KVectorUtil::Length(const KVector2& a, const KVector2& b)
+{
+    return sqrtf(LengthSquared(a, b));
+}
+
+float KVectorUtil::PointLinesegmentDistance(KVector2 p, KVector2 v, KVector2 w)
+{
+    // Return minimum distance between line segment vw and point p
+    const float l2 = LengthSquared(v, w);  // i.e. |w-v|^2 -  avoid a sqrt
+    if (l2 <= 0.0001f) return Length(p, v);   // v == w case
+    // Consider the line extending the segment, parameterized as v + t (w - v).
+    // We find projection of point p onto the line. 
+    // It falls where t = [(p-v) . (w-v)] / |w-v|^2
+    // We clamp t from [0,1] to handle points outside the segment vw.
+    const float t = __max(0, __min(1, KVector2::Dot(p - v, w - v) / l2));
+    const KVector2 projection = v + t * (w - v);  // Projection falls on the segment
+    return Length(p, projection);
+}

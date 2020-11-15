@@ -19,3 +19,14 @@ float KVector2::Dot(const KVector2& left, const KVector2& right)
 {
     return left.x * right.x + left.y * right.y;
 }//KVector2::Dot()
+
+float KVector2::LengthSquared(const KVector2& a, const KVector2& b)
+{
+    KVector2 t = b - a;
+    return t.x * t.x + t.y * t.y;
+}
+
+float KVector2::Length(const KVector2& a, const KVector2& b)
+{
+    return sqrtf(LengthSquared(a, b));
+}

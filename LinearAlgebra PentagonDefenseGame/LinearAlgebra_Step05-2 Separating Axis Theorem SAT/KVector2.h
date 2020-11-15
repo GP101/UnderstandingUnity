@@ -11,6 +11,8 @@ public:
 
     static KVector2 Lerp(const KVector2& begin, const KVector2& end, float ratio);
     static float Dot(const KVector2& left, const KVector2& right);
+    static float LengthSquared(const KVector2& a, const KVector2& b);
+    static float Length(const KVector2& a, const KVector2& b);
 
 public:
     float   x;

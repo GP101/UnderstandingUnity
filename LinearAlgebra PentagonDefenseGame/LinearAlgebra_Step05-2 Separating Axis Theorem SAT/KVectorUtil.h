@@ -18,4 +18,7 @@ namespace KVectorUtil
     void DrawGrid(HDC hdc, int numHorizontalGrid, int numVerticalGrid, COLORREF color = RGB(64, 64, 64));
     void DrawCircle(HDC hdc, const KVector2& center, float radius, int numSegment
         , int lineWidth = 1, int penStyle = PS_SOLID, COLORREF color = RGB(0, 0, 0));
+    float LengthSquared(const KVector2& a, const KVector2& b);
+    float Length(const KVector2& a, const KVector2& b);
+    float PointLinesegmentDistance(KVector2 p, KVector2 v, KVector2 w);
 }
