@@ -30,3 +30,13 @@ float KVector2::Length(const KVector2& a, const KVector2& b)
 {
     return sqrtf(LengthSquared(a, b));
 }
+
+float KVector2::Determinant(const KVector2&a, const KVector2 &b)
+{
+	return a.x*b.y - b.x*a.y;
+}
+
+bool KVector2::IsCCW(const KVector2&a, const KVector2 &b)
+{
+	return KVector2::Determinant(a, b) > 0.0f;
+}

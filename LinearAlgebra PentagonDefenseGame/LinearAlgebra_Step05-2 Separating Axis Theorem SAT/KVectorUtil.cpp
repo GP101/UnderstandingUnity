@@ -2,7 +2,7 @@
 #include "KVectorUtil.h"
 #include "KMatrix2.h"
 #define _USE_MATH_DEFINES
-#include <cmath>
+#include <math.h>
 
 KBasis2             KVectorUtil::g_basis2;
 KScreenCoordinate   KVectorUtil::g_screenCoordinate;
@@ -58,6 +58,21 @@ void KVectorUtil::DrawLine(HDC hdc, const KVector2& v0_, const KVector2& v1_, in
     }
     SelectObject(hdc, original);
     DeleteObject(hpen);
+}
+
+void KVectorUtil::DrawArrow(HDC hdc, const KVector2& v0, const KVector2& v1, float tipLength, int lineWidth, int penStyle, COLORREF color)
+{
+	DrawLine(hdc, v0, v1, lineWidth, penStyle, color);
+	//DrawCircle(hdc, v1, 0.08f, 8, 3);
+	KMatrix2 m;
+	m.SetRotation(30.0f* M_PI / 180.0f);
+	KVector2 dir = v0 - v1;
+	dir.Normalize();
+	KVector2 v2 = m * dir * tipLength;
+	DrawLine(hdc, v1, v1 + v2, lineWidth, penStyle, color);
+	m = m.GetInverse();
+	v2 = m * dir * tipLength;
+	DrawLine(hdc, v1, v1+v2, lineWidth, penStyle, color);
 }
 
 void KVectorUtil::DrawAxis(HDC hdc, int numHorizontalGrid, int numVerticalGrid, COLORREF color1, COLORREF color2)
@@ -136,4 +151,19 @@ float KVectorUtil::PointLinesegmentDistance(KVector2 p, KVector2 v, KVector2 w)
     const float t = __max(0, __min(1, KVector2::Dot(p - v, w - v) / l2));
     const KVector2 projection = v + t * (w - v);  // Projection falls on the segment
     return Length(p, projection);
+}
+
+bool KVectorUtil::IsPointInPolygon(const KVector2& p, const std::vector<KVector2>& points)
+{
+	const int numPoints = points.size();
+	if (numPoints <= 2)
+		return false;
+	for (int i = 0; i < numPoints; ++i)
+	{
+		const KVector2& p1 = points[i];
+		const KVector2& p2 = points[(i+1)%numPoints];
+		if (!KVector2::IsCCW(p1 - p, p2 - p))
+			return false;
+	}
+	return true;
 }

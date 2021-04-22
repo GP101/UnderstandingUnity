@@ -13,6 +13,8 @@ public:
     static float Dot(const KVector2& left, const KVector2& right);
     static float LengthSquared(const KVector2& a, const KVector2& b);
     static float Length(const KVector2& a, const KVector2& b);
+	static float Determinant(const KVector2&a, const KVector2 &b);
+	static bool IsCCW(const KVector2&a, const KVector2 &b);
 
 public:
     float   x;
@@ -37,6 +39,13 @@ public:
             return x;
         return y;
     }
+
+	KVector2 operator-()
+	{
+		KVector2 temp = KVector2(-x, -y);
+		return temp;
+	}
+
 };
 
 inline KVector2 operator+(const KVector2& lhs, const KVector2& rhs)
