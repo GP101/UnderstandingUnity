@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31112.23
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra Step05 Pentagon Defence Game Step1", "LinearAlgebra_Step05 Pentagon Defence Game Step1\LinearAlgebra Step05 Pentagon Defence Game Step1.vcxproj", "{DC4FA63A-FD4C-4DF9-B71A-0C386E89D443}"
 EndProject
@@ -17,7 +17,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step05-4 Prin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step05-2 Separating Axis Theorem SAT Basic", "LinearAlgebra_Step05-2 Separating Axis Theorem SAT Basic\LinearAlgebra_Step05-2 Separating Axis Theorem SAT Basic.vcxproj", "{6A7199FB-6DD4-4BB7-9E11-2375FF0DC2C4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step05-2 Separating Axis Theorem SAT", "LinearAlgebra_Step05-2 Separating Axis Theorem SAT Coll Info\LinearAlgebra_Step05-2 Separating Axis Theorem SAT.vcxproj", "{3A0173DA-E442-4F08-946D-66CA1F705B49}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearAlgebra_Step05-2 Separating Axis Theorem SAT Coll Info", "LinearAlgebra_Step05-2 Separating Axis Theorem SAT Coll Info\LinearAlgebra_Step05-2 Separating Axis Theorem SAT Coll Info.vcxproj", "{3A0173DA-E442-4F08-946D-66CA1F705B49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
