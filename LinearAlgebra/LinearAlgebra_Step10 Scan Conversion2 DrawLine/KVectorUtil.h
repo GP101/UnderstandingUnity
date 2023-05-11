@@ -29,4 +29,5 @@ namespace KVectorUtil
     void _ScanPlotLineLow(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color = Gdiplus::Color::Black);
     void _ScanPlotLineHigh(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color = Gdiplus::Color::Black);
     void ScanPlotLine(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color = Gdiplus::Color::Black);
+    void MidpointCircle(HDC hdc, int x_centre, int y_centre, int r, Gdiplus::Color color = Gdiplus::Color::Black);
 }

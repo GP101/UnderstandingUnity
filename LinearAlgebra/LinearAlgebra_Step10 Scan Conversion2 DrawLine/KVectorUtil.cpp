@@ -3,6 +3,7 @@
 
 KBasis2             KVectorUtil::g_basis2;
 KScreenCoordinate   KVectorUtil::g_screenCoordinate;
+extern int g_idebug;
 
 void KVectorUtil::SetScreenCoordinate(const KScreenCoordinate& screenCoord)
 {
@@ -242,6 +243,75 @@ void KVectorUtil::ScanPlotLine(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus:
         }
         else {
             _ScanPlotLineHigh(hdc, x0, y0, x1, y1);
+        }
+    }
+}
+
+void KVectorUtil::MidpointCircle(HDC hdc, int x_centre, int y_centre, int r, Gdiplus::Color color)
+{
+    int x = r;
+    int y = 0;
+
+    Gdiplus::Color color2 = color;
+#ifdef _DEBUG
+    //color2 = Gdiplus::Color::Red; // for debug
+#endif
+
+    // Printing the initial point on the axes
+    // after translation
+    PutPixel(hdc, x + x_centre, y + y_centre, color);
+
+    // When radius is zero only a single
+    // point will be printed
+    if (r > 0)
+    {
+        PutPixel(hdc, -x + x_centre, y + y_centre, color2);
+        PutPixel(hdc, y + x_centre, x + y_centre, color);
+        PutPixel(hdc, -y + x_centre, -x + y_centre, color2);
+    }
+
+    // Initialising the value of P
+    int P = 1 - r;
+    int dbgCnt = 0;
+    while (x > y)
+    {
+        y++;
+
+        // Mid-point is inside or on the perimeter
+        if (P <= 0)
+            P = P + 2 * y + 1;
+        // Mid-point is outside the perimeter
+        else
+        {
+            x--;
+            P = P + 2 * y - 2 * x + 1;
+        }
+
+        // All the perimeter points have already been printed
+        if (x < y)
+            break;
+
+#ifdef _DEBUG
+        //if (dbgCnt == g_idebug)
+        //    break;
+        //dbgCnt += 1;
+#endif
+
+        // Printing the generated point and its reflection
+        // in the other octants after translation
+        PutPixel(hdc, x + x_centre, y + y_centre, color);
+        PutPixel(hdc, -x + x_centre, y + y_centre, color2);
+        PutPixel(hdc, x + x_centre, -y + y_centre, color);
+        PutPixel(hdc, -x + x_centre, -y + y_centre, color2);
+
+        // If the generated point is on the line x = y then
+        // the perimeter points have already been printed
+        if (x != y)
+        {
+            PutPixel(hdc, y + x_centre, x + y_centre, color);
+            PutPixel(hdc, -y + x_centre, x + y_centre, color2);
+            PutPixel(hdc, y + x_centre, -x + y_centre, color);
+            PutPixel(hdc, -y + x_centre, -x + y_centre, color2);
         }
     }
 }
