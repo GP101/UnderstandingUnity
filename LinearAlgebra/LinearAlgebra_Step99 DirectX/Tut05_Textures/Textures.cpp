@@ -190,8 +190,8 @@ HRESULT InitGeometry()
         0 + 20, 1 + 20, 3 + 20,
         1 + 20, 2 + 20, 3 + 20,
     };
-    for( int i = 0; i < g_dwNumIndices; ++i ) {
-        pIndices[ i ] = buffer[ i ];
+    for( unsigned int i = 0; i < g_dwNumIndices; ++i ) {
+        pIndices[ i ] = (WORD)buffer[ i ];
     }
     g_pIB->Unlock();
 

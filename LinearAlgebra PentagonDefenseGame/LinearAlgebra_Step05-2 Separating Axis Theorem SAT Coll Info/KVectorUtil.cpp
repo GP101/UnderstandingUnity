@@ -65,7 +65,7 @@ void KVectorUtil::DrawArrow(HDC hdc, const KVector2& v0, const KVector2& v1, flo
 	DrawLine(hdc, v0, v1, lineWidth, penStyle, color);
 	//DrawCircle(hdc, v1, 0.08f, 8, 3);
 	KMatrix2 m;
-	m.SetRotation(30.0f* M_PI / 180.0f);
+	m.SetRotation(float(30.0f* M_PI / 180.0f));
 	KVector2 dir = v0 - v1;
 	dir.Normalize();
 	KVector2 v2 = m * dir * tipLength;

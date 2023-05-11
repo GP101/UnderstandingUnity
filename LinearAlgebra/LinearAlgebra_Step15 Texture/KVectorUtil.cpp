@@ -87,8 +87,8 @@ void KVectorUtil::PutPixel(HDC hdc, int x, int y, Gdiplus::Color color)
     {
         KVector2 v0 = g_basis2.Transform(v[i]);
         v0 = g_screenCoordinate.Transform(v0);
-        point[i].X = v0.x;
-        point[i].Y = v0.y;
+        point[i].X = (int)v0.x;
+        point[i].Y = (int)v0.y;
     }
 
     Gdiplus::SolidBrush  brush(color);
@@ -100,8 +100,8 @@ void KVectorUtil::_ScanLineLow(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus:
 {
     auto sign = [](float delta){ return delta > 0.f ? 1.0f : -1.0f; };
 
-    float deltax = x1 - x0;
-    float deltay = y1 - y0;
+    float deltax = float(x1 - x0);
+    float deltay = float(y1 - y0);
     float deltaerr = abs(deltay / deltax); // Assume deltax != 0 (line is not vertical),
     // note that this division needs to be done in a way that preserves the fractional part
     float error = 0.0f; // No error at start
@@ -112,7 +112,7 @@ void KVectorUtil::_ScanLineLow(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus:
         error = error + deltaerr;
         if (error >= 0.5f)
         {
-            y = y + sign(deltay) * 1.0f;
+            y = y + int(sign(deltay) * 1.0f);
             error = error - 1.0f;
         }
     }
@@ -122,8 +122,8 @@ void KVectorUtil::_ScanLineHigh(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus
 {
     auto sign = [](float delta){ return delta > 0.f ? 1.0f : -1.0f; };
 
-    float deltax = x1 - x0;
-    float deltay = y1 - y0;
+    float deltax = float(x1 - x0);
+    float deltay = float(y1 - y0);
     float deltaerr = abs(deltax / deltay); // Assume deltax != 0 (line is not vertical),
     // note that this division needs to be done in a way that preserves the fractional part
     float error = 0.0f; // No error at start
@@ -134,7 +134,7 @@ void KVectorUtil::_ScanLineHigh(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus
         error = error + deltaerr;
         if (error >= 0.5f)
         {
-            x = x + sign(deltax) * 1.0f;
+            x = x + int(sign(deltax) * 1.0f);
             error = error - 1.0f;
         }
     }
@@ -370,8 +370,7 @@ void KVectorUtil::ScanLineSegment( HDC hdc, int x1, int y1, KRgb c1, int x2, int
         const int bitmapWidth = bitmap.GetWidth() - 1;
         const int bitmapHeight = bitmap.GetHeight() - 1;
 
-        bool
-            horizontal = y1 == y2,
+        bool horizontal = y1 == y2,
             diagonal = y2 - y1 == x2 - x1;
 
         float scale = 1.0f / (x2 - x1);
@@ -395,7 +394,7 @@ void KVectorUtil::ScanLineSegment( HDC hdc, int x1, int y1, KRgb c1, int x2, int
                 const float u = __min(__max(col[0], 0), 1.0f);
                 const float v = __min(__max(col[1], 0), 1.0f);
                 Color color;
-                bitmap.GetPixel(u * bitmapWidth, v * bitmapHeight, &color);
+                bitmap.GetPixel(int(u * bitmapWidth), int(v * bitmapHeight), &color);
 
                 KRgb colTemp;
                 colTemp[0] = (color.GetR()/255.f + shadeColor[0]) / 2.0f;

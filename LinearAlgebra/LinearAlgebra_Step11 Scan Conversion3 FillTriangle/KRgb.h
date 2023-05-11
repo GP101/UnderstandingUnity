@@ -23,7 +23,7 @@ public:
 
     Gdiplus::Color GetGdiColor()
     {
-        Gdiplus::Color temp(rgb[0], rgb[1], rgb[2]);
+        Gdiplus::Color temp((BYTE)rgb[0], (BYTE)rgb[1], (BYTE)rgb[2]);
         return temp;
     }
 

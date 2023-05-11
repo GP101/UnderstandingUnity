@@ -78,15 +78,19 @@ void ScanDrawIndexedPrimitive( HDC hdc
         // draw triangle
         if(isVisible == true)
         {
-            KVectorUtil::FillTriangle( hdc, m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, color
-                , m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, color
-                , m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, color );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), nullptr );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), nullptr );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::FillTriangle( hdc
+                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, color
+                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, color
+                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, color );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), nullptr );
         }
         // advance to next primitive
         counter += 3;
@@ -140,15 +144,19 @@ void ScanDrawIndexedPrimitive( HDC hdc
         // draw triangle
         if(isVisible == true)
         {
-            KVectorUtil::FillTriangle( hdc, m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, uv[0]
-                , m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, uv[1]
-                , m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, uv[2], bitmap, color );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), nullptr );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i1].pos.x, m_vertexBuffer[i1].pos.y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), nullptr );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i2].pos.x, m_vertexBuffer[i2].pos.y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i0].pos.x, m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::FillTriangle( hdc
+                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, uv[0]
+                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, uv[1]
+                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, uv[2], bitmap, color );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), nullptr );
         }
         // advance to next primitive
         counter += 3;

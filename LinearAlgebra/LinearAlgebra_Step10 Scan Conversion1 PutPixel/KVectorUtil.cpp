@@ -86,8 +86,8 @@ void KVectorUtil::PutPixel(HDC hdc, int x, int y, Gdiplus::Color color)
     {
         KVector2 v0 = g_basis2.Transform(v[i]);
         v0 = g_screenCoordinate.Transform(v0);
-        point[i].X = v0.x;
-        point[i].Y = v0.y;
+        point[i].X = (int)v0.x;
+        point[i].Y = (int)v0.y;
     }
 
     Gdiplus::SolidBrush  brush(color);

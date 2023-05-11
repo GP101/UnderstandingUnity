@@ -78,15 +78,19 @@ void ScanDrawIndexedPrimitive( HDC hdc
         // draw triangle
         if(isVisible == true)
         {
-            KVectorUtil::FillTriangle( hdc, m_vertexBuffer[i0].x, m_vertexBuffer[i0].y, color
-                , m_vertexBuffer[i1].x, m_vertexBuffer[i1].y, color
-                , m_vertexBuffer[i2].x, m_vertexBuffer[i2].y, color );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i0].x, m_vertexBuffer[i0].y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i1].x, m_vertexBuffer[i1].y, KRgb( 0, 0, 0 ), nullptr );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i1].x, m_vertexBuffer[i1].y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i2].x, m_vertexBuffer[i2].y, KRgb( 0, 0, 0 ), nullptr );
-            KVectorUtil::ScanLineSegment( hdc, m_vertexBuffer[i2].x, m_vertexBuffer[i2].y, KRgb(0, 0, 0)
-                , m_vertexBuffer[i0].x, m_vertexBuffer[i0].y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::FillTriangle( hdc
+                , (int)m_vertexBuffer[i0].x, (int)m_vertexBuffer[i0].y, color
+                , (int)m_vertexBuffer[i1].x, (int)m_vertexBuffer[i1].y, color
+                , (int)m_vertexBuffer[i2].x, (int)m_vertexBuffer[i2].y, color );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i0].x, (int)m_vertexBuffer[i0].y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i1].x, (int)m_vertexBuffer[i1].y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i1].x, (int)m_vertexBuffer[i1].y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i2].x, (int)m_vertexBuffer[i2].y, KRgb( 0, 0, 0 ), nullptr );
+            KVectorUtil::ScanLineSegment( hdc
+                , (int)m_vertexBuffer[i2].x, (int)m_vertexBuffer[i2].y, KRgb( 0, 0, 0 )
+                , (int)m_vertexBuffer[i0].x, (int)m_vertexBuffer[i0].y, KRgb( 0, 0, 0 ), nullptr );
         }
         // advance to next primitive
         counter += 3;
