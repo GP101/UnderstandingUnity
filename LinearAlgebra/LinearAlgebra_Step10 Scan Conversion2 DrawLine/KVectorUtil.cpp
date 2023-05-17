@@ -247,7 +247,7 @@ void KVectorUtil::ScanPlotLine(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus:
     }
 }
 
-void KVectorUtil::MidpointCircle(HDC hdc, int x_centre, int y_centre, int r, Gdiplus::Color color)
+void KVectorUtil::ScanMidpointCircle(HDC hdc, int x_centre, int y_centre, int r, Gdiplus::Color color)
 {
     int x = r;
     int y = 0;
