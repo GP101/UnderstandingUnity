@@ -151,32 +151,32 @@ void KPolygon::SetIndexBuffer()
 
 void KPolygon::SetVertexBuffer()
 {
-    m_vertexBuffer[0]  = KVertex{ KVector3(-30.f, -30.f, +30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[1]  = KVertex{ KVector3(-30.f, +30.f, +30.f), KRgb(0, 1, 0) };
-    m_vertexBuffer[2]  = KVertex{ KVector3(+30.f, +30.f, +30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[3]  = KVertex{ KVector3(+30.f, -30.f, +30.f), KRgb(0, 0, 1) };
-    m_vertexBuffer[4]  = KVertex{ KVector3(-30.f, -30.f, -30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[5]  = KVertex{ KVector3(-30.f, +30.f, -30.f), KRgb(0, 1, 0) };
-    m_vertexBuffer[6]  = KVertex{ KVector3(+30.f, +30.f, -30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[7]  = KVertex{ KVector3(+30.f, -30.f, -30.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[0]  = KVertex{ KVector3(-20.f, -20.f, +20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[1]  = KVertex{ KVector3(-20.f, +20.f, +20.f), KRgb(0, 1, 0) };
+    m_vertexBuffer[2]  = KVertex{ KVector3(+20.f, +20.f, +20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[3]  = KVertex{ KVector3(+20.f, -20.f, +20.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[4]  = KVertex{ KVector3(-20.f, -20.f, -20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[5]  = KVertex{ KVector3(-20.f, +20.f, -20.f), KRgb(0, 1, 0) };
+    m_vertexBuffer[6]  = KVertex{ KVector3(+20.f, +20.f, -20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[7]  = KVertex{ KVector3(+20.f, -20.f, -20.f), KRgb(0, 0, 1) };
 
-    m_vertexBuffer[8]  = KVertex{ KVector3(-30.f, +30.f, -30.f), KRgb(0, 0, 1) };
-    m_vertexBuffer[9]  = KVertex{ KVector3(+30.f, +30.f, -30.f), KRgb(0, 0, 1) };
-    m_vertexBuffer[10] = KVertex{ KVector3(+30.f, +30.f, +30.f), KRgb(0, 0, 1) };
-    m_vertexBuffer[11] = KVertex{ KVector3(-30.f, +30.f, +30.f), KRgb(0, 0, 1) };
-    m_vertexBuffer[12] = KVertex{ KVector3(-30.f, -30.f, -30.f), KRgb(0, 0, 1) };
-    m_vertexBuffer[13] = KVertex{ KVector3(+30.f, -30.f, -30.f), KRgb(0, 0, 1) };
-    m_vertexBuffer[14] = KVertex{ KVector3(+30.f, -30.f, +30.f), KRgb(0, 0, 1) };
-    m_vertexBuffer[15] = KVertex{ KVector3(-30.f, -30.f, +30.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[8]  = KVertex{ KVector3(-20.f, +20.f, -20.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[9]  = KVertex{ KVector3(+20.f, +20.f, -20.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[10] = KVertex{ KVector3(+20.f, +20.f, +20.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[11] = KVertex{ KVector3(-20.f, +20.f, +20.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[12] = KVertex{ KVector3(-20.f, -20.f, -20.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[13] = KVertex{ KVector3(+20.f, -20.f, -20.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[14] = KVertex{ KVector3(+20.f, -20.f, +20.f), KRgb(0, 0, 1) };
+    m_vertexBuffer[15] = KVertex{ KVector3(-20.f, -20.f, +20.f), KRgb(0, 0, 1) };
 
-    m_vertexBuffer[16] = KVertex{ KVector3(-30.f, -30.f, -30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[17] = KVertex{ KVector3(-30.f, +30.f, -30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[18] = KVertex{ KVector3(-30.f, +30.f, +30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[19] = KVertex{ KVector3(-30.f, -30.f, +30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[20] = KVertex{ KVector3(+30.f, -30.f, -30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[21] = KVertex{ KVector3(+30.f, +30.f, -30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[22] = KVertex{ KVector3(+30.f, +30.f, +30.f), KRgb(1, 0, 0) };
-    m_vertexBuffer[23] = KVertex{ KVector3(+30.f, -30.f, +30.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[16] = KVertex{ KVector3(-20.f, -20.f, -20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[17] = KVertex{ KVector3(-20.f, +20.f, -20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[18] = KVertex{ KVector3(-20.f, +20.f, +20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[19] = KVertex{ KVector3(-20.f, -20.f, +20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[20] = KVertex{ KVector3(+20.f, -20.f, -20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[21] = KVertex{ KVector3(+20.f, +20.f, -20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[22] = KVertex{ KVector3(+20.f, +20.f, +20.f), KRgb(1, 0, 0) };
+    m_vertexBuffer[23] = KVertex{ KVector3(+20.f, -20.f, +20.f), KRgb(1, 0, 0) };
 
     m_sizeVertex = 24;
 }//KPolygon::SetVertexBuffer()
