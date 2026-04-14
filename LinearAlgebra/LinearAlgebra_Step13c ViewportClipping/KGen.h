@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <iostream>
-#include <atltime.h>
+//#include <atltime.h>
 
 #ifndef COMMA
 #define COMMA()         ,

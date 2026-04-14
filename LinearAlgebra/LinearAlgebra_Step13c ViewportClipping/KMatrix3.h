@@ -58,7 +58,7 @@ public:
         SetIdentity();
         _11 = uniformScale;
         _22 = uniformScale;
-        _33 = uniformScale;
+        _33 = 1;
     }
 
     void SetTranslation( double tx, double ty)
