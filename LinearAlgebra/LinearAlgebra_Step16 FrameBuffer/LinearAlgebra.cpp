@@ -293,9 +293,22 @@ void OnSize()
 
     HDC hdc = ::GetDC(g_hwnd);
     g_hdc = CreateCompatibleDC(hdc);
-    g_hBitmap = CreateCompatibleBitmap(hdc, iWidth, iHeight);
-    if (g_hdc != 0 && g_hBitmap != 0)
-        SelectObject(g_hdc, g_hBitmap);
+
+    BITMAPINFO bmi = {};
+    bmi.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
+    bmi.bmiHeader.biWidth = iWidth;
+    bmi.bmiHeader.biHeight = -iHeight; // top-down, row 0 = top of client
+    bmi.bmiHeader.biPlanes = 1;
+    bmi.bmiHeader.biBitCount = 32;
+    bmi.bmiHeader.biCompression = BI_RGB;
+
+    void* dibBits = nullptr;
+    g_hBitmap = CreateDIBSection(hdc, &bmi, DIB_RGB_COLORS, &dibBits, nullptr, 0);
+    SelectObject(g_hdc, g_hBitmap);
+
+    const int stride = ((iWidth * 32 + 31) / 32) * 4;
+    KVectorUtil::SetFrameBuffer(dibBits, iWidth, iHeight, stride);
+
     ::ReleaseDC(g_hwnd, hdc);
 }//OnSize()
 
@@ -372,17 +385,13 @@ void OnIdle(float fElapsedTime_)
     OnUpdate(fElapsedTime_);
     HDC hdc = ::GetDC(g_hwnd);
 
-    HBRUSH brush;
-    brush = CreateSolidBrush(RGB(255, 255, 255));
-    SelectObject(g_hdc, brush);
-    Rectangle(g_hdc, 0, 0, iWidth, iHeight);
+    KVectorUtil::ClearFrameBufferWhite();
 
     {
         OnRender( g_hdc, fElapsedTime_);
     }
 
     BitBlt(hdc, 0, 0, iWidth, iHeight, g_hdc, 0, 0, SRCCOPY);
-    DeleteObject(brush);
 
     ::ReleaseDC(g_hwnd, hdc);
 }//OnIdle()

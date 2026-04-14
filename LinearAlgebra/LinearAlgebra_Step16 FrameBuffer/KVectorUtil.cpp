@@ -1,9 +1,61 @@
 #include "stdafx.h"
 #include "KVectorUtil.h"
 #include <cassert>
+#include <algorithm>
+#include <cwchar>
 
 KBasis2             KVectorUtil::g_basis2;
 KScreenCoordinate   KVectorUtil::g_screenCoordinate;
+
+namespace
+{
+    void*   g_frameBits = nullptr;
+    int     g_frameWidth = 0;
+    int     g_frameHeight = 0;
+    int     g_frameStride = 0;
+
+    static bool PointInConvexQuad(int px, int py, const int qx[4], const int qy[4])
+    {
+        auto cross = [](int ax, int ay, int bx, int by) -> __int64
+        {
+            return (__int64)ax * by - (__int64)ay * bx;
+        };
+
+        bool allNonNeg = true;
+        bool allNonPos = true;
+        for (int i = 0; i < 4; ++i)
+        {
+            const int x0 = qx[i];
+            const int y0 = qy[i];
+            const int x1 = qx[(i + 1) & 3];
+            const int y1 = qy[(i + 1) & 3];
+            const int dx = x1 - x0;
+            const int dy = y1 - y0;
+            const int fx = px - x0;
+            const int fy = py - y0;
+            const __int64 s = cross(dx, dy, fx, fy);
+            if (s < 0) allNonNeg = false;
+            if (s > 0) allNonPos = false;
+        }
+        return allNonNeg || allNonPos;
+    }
+}
+
+void KVectorUtil::SetFrameBuffer(void* bits, int width, int height, int strideBytes)
+{
+    g_frameBits = bits;
+    g_frameWidth = width;
+    g_frameHeight = height;
+    g_frameStride = strideBytes;
+}
+
+void KVectorUtil::ClearFrameBufferWhite()
+{
+    if (!g_frameBits || g_frameWidth <= 0 || g_frameHeight <= 0 || g_frameStride <= 0)
+        return;
+    const size_t nbytes = (size_t)g_frameStride * (size_t)g_frameHeight;
+    memset(g_frameBits, 0xFF, nbytes);
+}
 
 void KVectorUtil::SetScreenCoordinate(const KScreenCoordinate& screenCoord)
 {
@@ -86,26 +138,67 @@ void KVectorUtil::DrawGrid( HDC hdc, int numHorizontalGrid, int numVerticalGrid,
 
 void KVectorUtil::PutPixel(HDC hdc, int x, int y, Gdiplus::Color color)
 {
-    Gdiplus::Graphics    graphics(hdc);
-    const float dotWidth = g_screenCoordinate.axis0.Length();
-    const float dotHeight = g_screenCoordinate.axis1.Length();
-
-    Gdiplus::Point  point[4];
     KVector2 v[4] = { KVector2(x, y)
         , KVector2(x, y + 1)
         , KVector2(x + 1, y + 1)
         , KVector2(x + 1, y) };
+
+    int qx[4];
+    int qy[4];
     for (int i = 0; i < 4; ++i)
     {
         KVector2 v0 = g_basis2.Transform(v[i]);
         v0 = g_screenCoordinate.Transform(v0);
-        point[i].X = (int)v0.x;
-        point[i].Y = (int)v0.y;
+        qx[i] = (int)v0.x;
+        qy[i] = (int)v0.y;
     }
 
-    Gdiplus::SolidBrush  brush(color);
+    const DWORD bgra = (DWORD)color.GetB()
+        | ((DWORD)color.GetG() << 8)
+        | ((DWORD)color.GetR() << 16)
+        | ((DWORD)color.GetA() << 24);
+
+    if (g_frameBits && g_frameWidth > 0 && g_frameHeight > 0 && g_frameStride >= 4)
+    {
+        int xmin = qx[0], xmax = qx[0], ymin = qy[0], ymax = qy[0];
+        for (int i = 1; i < 4; ++i)
+        {
+            xmin = (std::min)(xmin, qx[i]);
+            xmax = (std::max)(xmax, qx[i]);
+            ymin = (std::min)(ymin, qy[i]);
+            ymax = (std::max)(ymax, qy[i]);
+        }
+
+        xmin = (std::max)(xmin, 0);
+        ymin = (std::max)(ymin, 0);
+        xmax = (std::min)(xmax, g_frameWidth - 1);
+        ymax = (std::min)(ymax, g_frameHeight - 1);
+
+        if (xmin > xmax || ymin > ymax)
+            return;
+
+        BYTE* const base = static_cast<BYTE*>(g_frameBits);
+        for (int py = ymin; py <= ymax; ++py)
+        {
+            DWORD* row = reinterpret_cast<DWORD*>(base + (size_t)py * (size_t)g_frameStride);
+            for (int px = xmin; px <= xmax; ++px)
+            {
+                if (PointInConvexQuad(px, py, qx, qy))
+                    row[px] = bgra;
+            }
+        }
+        return;
+    }
+
+    Gdiplus::Graphics graphics(hdc);
+    Gdiplus::Point point[4];
+    for (int i = 0; i < 4; ++i)
+    {
+        point[i].X = qx[i];
+        point[i].Y = qy[i];
+    }
+    Gdiplus::SolidBrush brush(color);
     graphics.FillPolygon(&brush, point, 4);
-    //graphics.FillRectangle(&brush, v0.x, v0.y, dotWidth, dotHeight);
 }
 
 void KVectorUtil::_ScanLineLow(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color)

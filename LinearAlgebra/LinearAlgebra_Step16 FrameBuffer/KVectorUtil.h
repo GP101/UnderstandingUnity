@@ -17,6 +17,10 @@ namespace KVectorUtil
     extern KScreenCoordinate    g_screenCoordinate;
     extern KBasis2  g_basis2;
 
+    /// 32bpp top-down DIB (BGRA) — set from CreateDIBSection; nullptr disables fast PutPixel path.
+    void SetFrameBuffer(void* bits, int width, int height, int strideBytes);
+    void ClearFrameBufferWhite();
+
     void SetScreenCoordinate(const KScreenCoordinate& screenCoord);
     void SetBasis2(const KBasis2& basis2);
     void DrawLine(HDC hdc, const KVector2& v0, const KVector2& v1
