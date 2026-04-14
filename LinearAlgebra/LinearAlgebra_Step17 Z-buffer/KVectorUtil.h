@@ -45,8 +45,10 @@ namespace KVectorUtil
     void _ScanPlotLineHigh(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color = Gdiplus::Color::Black);
     void ScanPlotLine(HDC hdc, int x0, int y0, int x1, int y1, Gdiplus::Color color = Gdiplus::Color::Black);
 
+    /// When drawing to the framebuffer (output == nullptr), subtracts depthBias from z so
+    /// lines sit slightly nearer than filled pixels (smaller z passes the depth test).
     void ScanLineSegment(HDC hdc, int x1, int y1, KRgb c1, float z1, int x2, int y2, KRgb c2, float z2
-        , std::set<ScannedResult>* output);
+        , std::set<ScannedResult>* output, float depthBias = 0.f);
     void ScanLineSegment(HDC hdc, int x1, int y1, KRgb c1, int x2, int y2, KRgb c2
         , std::set<ScannedResult>* output);
     void FillTriangle(HDC hdc, int x1, int y1, KRgb const col1, float z1

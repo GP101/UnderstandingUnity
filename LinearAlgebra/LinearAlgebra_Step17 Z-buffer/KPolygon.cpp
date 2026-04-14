@@ -3,6 +3,12 @@
 #include "KVectorUtil.h"
 #include "KRenderState.h"
 
+namespace
+{
+    /// Nudge wireframe slightly nearer (smaller z) than filled triangles to avoid z-fighting.
+    const float kWireframeDepthBias = 0.0f;
+}
+
 void DrawIndexedPrimitive( HDC hdc
     , int* m_indexBuffer            // index buffer
     , int primitiveCounter          // primitive counter
@@ -84,13 +90,13 @@ void ScanDrawIndexedPrimitive( HDC hdc
                 , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, color, m_vertexBuffer[i2].pos.z );
             KVectorUtil::ScanLineSegment( hdc
                 , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i0].pos.z
-                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i1].pos.z, nullptr );
+                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i1].pos.z, nullptr, kWireframeDepthBias );
             KVectorUtil::ScanLineSegment( hdc
                 , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i1].pos.z
-                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i2].pos.z, nullptr );
+                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i2].pos.z, nullptr, kWireframeDepthBias );
             KVectorUtil::ScanLineSegment( hdc
                 , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i2].pos.z
-                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i0].pos.z, nullptr );
+                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i0].pos.z, nullptr, kWireframeDepthBias );
         }
         // advance to next primitive
         counter += 3;
@@ -150,13 +156,13 @@ void ScanDrawIndexedPrimitive( HDC hdc
                 , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, uv[2], m_vertexBuffer[i2].pos.z, bitmap, color );
             KVectorUtil::ScanLineSegment( hdc
                 , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i0].pos.z
-                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i1].pos.z, nullptr );
+                , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i1].pos.z, nullptr, kWireframeDepthBias );
             KVectorUtil::ScanLineSegment( hdc
                 , (int)m_vertexBuffer[i1].pos.x, (int)m_vertexBuffer[i1].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i1].pos.z
-                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i2].pos.z, nullptr );
+                , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i2].pos.z, nullptr, kWireframeDepthBias );
             KVectorUtil::ScanLineSegment( hdc
                 , (int)m_vertexBuffer[i2].pos.x, (int)m_vertexBuffer[i2].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i2].pos.z
-                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i0].pos.z, nullptr );
+                , (int)m_vertexBuffer[i0].pos.x, (int)m_vertexBuffer[i0].pos.y, KRgb( 0, 0, 0 ), m_vertexBuffer[i0].pos.z, nullptr, kWireframeDepthBias );
         }
         // advance to next primitive
         counter += 3;

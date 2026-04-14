@@ -494,12 +494,12 @@ void KVectorUtil::ScanLineSegment(HDC hdc, int x1, int y1, KRgb c1, int x2, int 
 }
 
 void KVectorUtil::ScanLineSegment(HDC hdc, int x1, int y1, KRgb c1, float z1, int x2, int y2, KRgb c2, float z2
-    , std::set<ScannedResult>* output)
+    , std::set<ScannedResult>* output, float depthBias)
 {
     bool swap_xy = false;
     bool flip_y = false;
 
-    auto _scanLineSegment = [&hdc, &swap_xy, &flip_y](int x1, int y1, KRgb const col1, float z1_
+    auto _scanLineSegment = [&hdc, &swap_xy, &flip_y, depthBias](int x1, int y1, KRgb const col1, float z1_
         , int x2, int y2, KRgb const col2, float z2_
         , std::set<ScannedResult>* output)
     {
@@ -525,7 +525,7 @@ void KVectorUtil::ScanLineSegment(HDC hdc, int x1, int y1, KRgb c1, float z1, in
             if (output)
                 output->insert(ScannedResult(X, Y, col, z));
             else
-                PutPixelDepth(hdc, X, Y, col.GetGdiColor(), z);
+                PutPixelDepth(hdc, X, Y, col.GetGdiColor(), z - depthBias);
 
             if (!horizontal)
             {
